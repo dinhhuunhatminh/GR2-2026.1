@@ -1,0 +1,382 @@
+{
+ "_ghi_chu": "Số đo thực nghiệm trên các bộ có đáp án (bước 4 + tầng 2 + bước 21). Tỷ lệ kèm khoảng tin cậy Wilson 95%. Nguồn: Dataset/buoc4_kiem_chung, Dataset/tang2_*, Dataset/buoc21_mo_rong_5_cong_cu.",
+ "semgrep": {
+  "OWASP_Benchmark_Java": {
+   "bat_dung": 0.882,
+   "bao_nham": 0.417,
+   "Youden_TB": 0.44
+  },
+  "OWASP_Benchmark_Python": {
+   "bat_dung": 0.321,
+   "bao_nham": 0.136,
+   "Youden_TB": 0.157
+  },
+  "Juice_Shop_27_dong_loi": "6/27"
+ },
+ "codeql": {
+  "OWASP_Benchmark_Java": {
+   "bat_dung": 0.278,
+   "bao_nham": 0.168,
+   "Youden_TB": 0.099
+  },
+  "OWASP_Benchmark_Python": {
+   "bat_dung": 0.252,
+   "bao_nham": 0.201,
+   "Youden_TB": 0.11
+  },
+  "Juice_Shop_27_dong_loi": "10/27"
+ },
+ "bandit": {
+  "OWASP_Benchmark_Python": {
+   "bat_dung": 0.223,
+   "bao_nham": 0.032,
+   "Youden_TB": 0.082
+  }
+ },
+ "njsscan": {
+  "Juice_Shop_27_dong_loi": "0/27"
+ },
+ "eslint_security": {
+  "Juice_Shop_27_dong_loi": "0/27"
+ },
+ "eslint_mo_rong": {
+  "Juice_Shop_27_dong_loi": "0/27"
+ },
+ "gitleaks": {
+  "bi_mat_E4": {
+   "bat": "43/48",
+   "ci": [
+    0.778,
+    0.955
+   ],
+   "bao_nham_moi_nhu": "0/33"
+  }
+ },
+ "trivy": {
+  "bi_mat_E4": {
+   "bat": "36/48",
+   "ci": [
+    0.612,
+    0.851
+   ],
+   "bao_nham_moi_nhu": "0/33"
+  },
+  "cau_hinh_E5_cham_chat": {
+   "bat": "16/23",
+   "ci": [
+    0.491,
+    0.844
+   ],
+   "theo_loai": {
+    "dockerfile": "3/5",
+    "terraform": "5/6",
+    "cloudformation": "3/3",
+    "k8s": "5/5",
+    "gh_actions": "0/4"
+   }
+  },
+  "SCA_91_du_an_npm": {
+   "bat": "472/473",
+   "ty_le": 0.998,
+   "ci": [
+    0.988,
+    1.0
+   ],
+   "bao_nham_du_an_sach": "0/10"
+  },
+  "Release_A_13_image_CVE": {
+   "bat": "43/43",
+   "ci": [
+    0.918,
+    1.0
+   ],
+   "so_goi_os_quet_duoc": 26
+  },
+  "Release_B_24_ca_Dockerfile": {
+   "bat_ca": "14/24",
+   "bat_lop": "7/12",
+   "ci": [
+    0.388,
+    0.755
+   ],
+   "bao_nham_image_sach": "0/4"
+  }
+ },
+ "checkov": {
+  "cau_hinh_E5_cham_chat": {
+   "bat": "18/23",
+   "ci": [
+    0.581,
+    0.903
+   ],
+   "theo_loai": {
+    "dockerfile": "3/5",
+    "terraform": "6/6",
+    "cloudformation": "3/3",
+    "k8s": "4/5",
+    "gh_actions": "2/4"
+   }
+  },
+  "Release_B_24_ca_Dockerfile": {
+   "bat_ca": "14/24",
+   "bat_lop": "7/12",
+   "ci": [
+    0.388,
+    0.755
+   ],
+   "bao_nham_image_sach": "0/4"
+  }
+ },
+ "hadolint": {
+  "cau_hinh_E5_cham_chat": {
+   "bat": "1/5",
+   "ci": [
+    0.036,
+    0.624
+   ],
+   "theo_loai": {
+    "dockerfile": "1/5"
+   }
+  },
+  "Release_B_24_ca_Dockerfile": {
+   "bat_ca": "6/24",
+   "bat_lop": "3/12",
+   "ci": [
+    0.12,
+    0.449
+   ],
+   "canh_bao_image_sach_tb": 2.0
+  }
+ },
+ "zap": {
+  "Juice_Shop_19_lo_hong_khong_dang_nhap": {
+   "chat": "4/19",
+   "ci": [
+    0.085,
+    0.433
+   ],
+   "long": "6/19"
+  },
+  "thoi_gian_phut": {
+   "trung_vi": 6,
+   "min_max": [
+    3,
+    15
+   ]
+  },
+  "ghi_chu": "ZAP chưa cấu hình đăng nhập nên không bù khoảng trống đăng nhập/phiên/phân quyền.",
+  "gr2_vulnapp_10_lop": {
+   "zap_baseline": {
+    "bat": "4/10",
+    "ci": [
+     0.168,
+     0.687
+    ],
+    "lop_bat_duoc": [
+     "headers",
+     "cookie",
+     "cors",
+     "infoleak"
+    ],
+    "bao_nham_safe_route": "1/9",
+    "thoi_gian_s": 65.0
+   },
+   "zap_full": {
+    "bat": "9/10",
+    "ci": [
+     0.596,
+     0.982
+    ],
+    "lop_bat_duoc": [
+     "xss",
+     "sqli",
+     "path",
+     "redirect",
+     "cmd",
+     "headers",
+     "cookie",
+     "cors",
+     "infoleak"
+    ],
+    "lop_bo_sot": [
+     "exposed_file"
+    ],
+    "bao_nham_safe_route": "2/9",
+    "thoi_gian_s": 465.0
+   }
+  }
+ },
+ "osv-scanner": {
+  "SCA_91_du_an_npm": {
+   "bat": "473/473",
+   "ty_le": 1.0,
+   "ci": [
+    0.992,
+    1.0
+   ],
+   "bao_nham_du_an_sach": "0/10"
+  }
+ },
+ "kics": {
+  "cau_hinh_E5_cham_chat": {
+   "bat": "18/23",
+   "ci": [
+    0.581,
+    0.903
+   ],
+   "theo_loai": {
+    "dockerfile": "4/5",
+    "terraform": "6/6",
+    "cloudformation": "3/3",
+    "k8s": "5/5",
+    "gh_actions": "0/4"
+   }
+  },
+  "docker_compose_13_bien_the": {
+   "bat": "9/13",
+   "ci": [
+    0.424,
+    0.873
+   ],
+   "bao_nham_base_cung_hoa": 0,
+   "thoi_gian_s": 1.6
+  },
+  "Release_B_24_ca_Dockerfile": {
+   "bat_ca": "16/24",
+   "bat_lop": "8/12",
+   "ci": [
+    0.467,
+    0.82
+   ],
+   "bao_nham_image_sach": "0/4"
+  }
+ },
+ "grype": {
+  "SCA_91_du_an_npm": {
+   "bat": "472/473",
+   "ty_le": 0.998,
+   "ci": [
+    0.988,
+    1.0
+   ],
+   "bao_nham_du_an_sach": "0/10",
+   "thoi_gian_trung_vi_s": 2.34
+  },
+  "Release_A_13_image_CVE": {
+   "bat": "43/43",
+   "ty_le": 1.0,
+   "ci": [
+    0.918,
+    1.0
+   ],
+   "so_goi_os_quet_duoc": 91,
+   "thoi_gian_trung_vi_s": 11.29
+  }
+ },
+ "dockle": {
+  "Release_B_24_ca_container_image": {
+   "bat_ca": "12/24",
+   "bat_lop": "6/12",
+   "ci": [
+    0.314,
+    0.686
+   ],
+   "lop_bat_duoc": [
+    "root",
+    "secret_env",
+    "no_healthcheck",
+    "apt_hygiene",
+    "env_file",
+    "ssh_key"
+   ],
+   "bat_doc_quyen_trong_image": [
+    "env_file",
+    "ssh_key"
+   ],
+   "canh_bao_image_sach_tb": 2.5,
+   "thoi_gian_trung_vi_s": 8.87
+  }
+ },
+ "docker_bench": {
+  "Deploy_Operate_13_container_runtime": {
+   "bat": "10/13",
+   "ci": [
+    0.497,
+    0.918
+   ],
+   "lop_bat_duoc": [
+    "privileged",
+    "docker_sock",
+    "no_new_privs",
+    "cap_add",
+    "host_network",
+    "no_mem_limit",
+    "rw_rootfs",
+    "all_interfaces",
+    "no_healthcheck",
+    "host_pid"
+   ],
+   "bat_doc_quyen_runtime_so_voi_kics": [
+    "no_mem_limit",
+    "rw_rootfs"
+   ],
+   "canh_bao_base_cung_hoa": 3,
+   "thoi_gian_s": 42.6
+  }
+ },
+ "nuclei": {
+  "gr2_vulnapp_10_lop_3_lan": {
+   "dast_mode": {
+    "bat": "4/10",
+    "lop_bat_duoc": [
+     "xss",
+     "path",
+     "redirect",
+     "cmd"
+    ],
+    "bao_nham_safe_route": "0/9",
+    "thoi_gian_3_lan_s": [
+     32.7,
+     30.0,
+     33.0
+    ]
+   },
+   "exposures_mode": {
+    "bat": "1/10",
+    "lop_bat_duoc": [
+     "exposed_file"
+    ],
+    "bao_nham_safe_route": "0/9",
+    "thoi_gian_3_lan_s": [
+     31.3,
+     31.0,
+     30.1
+    ]
+   },
+   "ket_hop_dast_exposures": {
+    "bat": "5/10",
+    "ci": [
+     0.237,
+     0.763
+    ],
+    "lop_bat_duoc": [
+     "xss",
+     "path",
+     "redirect",
+     "cmd",
+     "exposed_file"
+    ],
+    "bat_doc_quyen_so_voi_zap": [
+     "exposed_file"
+    ],
+    "bao_nham_safe_route": "0/9",
+    "thoi_gian_3_lan_s": [
+     64.0,
+     61.0,
+     63.1
+    ],
+    "trung_vi_s": 63.1
+   }
+  }
+ }
+}

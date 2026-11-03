@@ -1,0 +1,6292 @@
+{
+"phien_ban": "hcl_b29",
+"nhan": "y_ham (dot 2, 926 ca, 1997 cap)",
+"kappa": 10,
+"che_do_mu": "A0",
+"cau_hinh_hmlc": {
+"temp": 0.07,
+"base_temp": 0.07,
+"dropout": 0.1,
+"hidden": [
+256,
+128
+],
+"dim": 128,
+"epochs": 100,
+"batch": 512,
+"lr": 0.001,
+"wd": 0.0001,
+"seed": 0
+},
+"loss_dau_cuoi": [
+7.343304634094238,
+4.458849143981934
+],
+"p": {
+"javascript": {
+"semgrep": {
+"access_control": 0.012657,
+"bo_nho": 0.039235,
+"cmd": 0.077353,
+"cors": 0.024522,
+"csrf": 0.028025,
+"deserialization": 0.039235,
+"eval": 0.026157,
+"info_exposure": 0.024522,
+"insecure_random": 0.035669,
+"jwt_secret": 0.028025,
+"khac": 0.015644,
+"ma_doc": 0.035669,
+"open_redirect": 0.030181,
+"path": 0.149522,
+"prototype": 0.021797,
+"regex": 0.063289,
+"sqli": 0.030181,
+"ssrf": 0.028025,
+"validation": 0.099454,
+"weak_hash": 0.030181,
+"xac_thuc": 0.028025,
+"xss": 0.066303,
+"xxe": 0.039235
+},
+"codeql": {
+"access_control": 0.012533,
+"bo_nho": 0.038851,
+"cmd": 0.07714,
+"cors": 0.024282,
+"csrf": 0.027751,
+"deserialization": 0.038851,
+"eval": 0.025901,
+"info_exposure": 0.086782,
+"insecure_random": 0.035319,
+"jwt_secret": 0.027751,
+"khac": 0.038073,
+"ma_doc": 0.035319,
+"open_redirect": 0.029886,
+"path": 0.024282,
+"prototype": 0.132695,
+"regex": 0.063114,
+"sqli": 0.106809,
+"ssrf": 0.027751,
+"validation": 0.027751,
+"weak_hash": 0.029886,
+"xac_thuc": 0.027751,
+"xss": 0.06612,
+"xxe": 0.038851
+},
+"njsscan": {
+"access_control": 0.001671,
+"bo_nho": 0.005181,
+"cmd": 0.002879,
+"cors": 0.003238,
+"csrf": 0.003701,
+"deserialization": 0.005181,
+"eval": 0.003454,
+"info_exposure": 0.003238,
+"insecure_random": 0.00471,
+"jwt_secret": 0.003701,
+"khac": 0.011818,
+"ma_doc": 0.00471,
+"open_redirect": 0.003986,
+"path": 0.003238,
+"prototype": 0.002879,
+"regex": 0.002355,
+"sqli": 0.003986,
+"ssrf": 0.003701,
+"validation": 0.003701,
+"weak_hash": 0.003986,
+"xac_thuc": 0.003701,
+"xss": 0.002467,
+"xxe": 0.005181
+},
+"eslint_security": {
+"access_control": 0.072289,
+"bo_nho": 0.072289,
+"cmd": 0.055607,
+"cors": 0.060241,
+"csrf": 0.055607,
+"deserialization": 0.072289,
+"eval": 0.060241,
+"info_exposure": 0.060241,
+"insecure_random": 0.065717,
+"jwt_secret": 0.060241,
+"khac": 0.056727,
+"ma_doc": 0.065717,
+"open_redirect": 0.065717,
+"path": 0.143574,
+"prototype": 0.114859,
+"regex": 0.14331,
+"sqli": 0.065717,
+"ssrf": 0.072289,
+"validation": 0.060241,
+"weak_hash": 0.055607,
+"xac_thuc": 0.060241,
+"xss": 0.051635,
+"xxe": 0.072289
+},
+"eslint_mo_rong": {
+"access_control": 0.024096,
+"bo_nho": 0.024096,
+"cmd": 0.018536,
+"cors": 0.02008,
+"csrf": 0.018536,
+"deserialization": 0.024096,
+"eval": 0.02008,
+"info_exposure": 0.02008,
+"insecure_random": 0.021906,
+"jwt_secret": 0.02008,
+"khac": 0.00502,
+"ma_doc": 0.021906,
+"open_redirect": 0.021906,
+"path": 0.02008,
+"prototype": 0.016064,
+"regex": 0.117945,
+"sqli": 0.021906,
+"ssrf": 0.024096,
+"validation": 0.02008,
+"weak_hash": 0.018536,
+"xac_thuc": 0.02008,
+"xss": 0.017212,
+"xxe": 0.024096
+}
+},
+"python": {
+"semgrep": {
+"access_control": 0.046412,
+"bo_nho": 0.035669,
+"cmd": 0.242311,
+"cors": 0.035669,
+"csrf": 0.032696,
+"deserialization": 0.292824,
+"eval": 0.099454,
+"info_exposure": 0.02308,
+"insecure_random": 0.032696,
+"jwt_secret": 0.021797,
+"khac": 0.003924,
+"ma_doc": 0.039235,
+"open_redirect": 0.107104,
+"path": 0.021797,
+"prototype": 0.039235,
+"regex": 0.063289,
+"sqli": 0.092824,
+"ssrf": 0.021797,
+"validation": 0.024522,
+"weak_hash": 0.035669,
+"xac_thuc": 0.028025,
+"xss": 0.02308,
+"xxe": 0.11603
+},
+"codeql": {
+"access_control": 0.01295,
+"bo_nho": 0.035319,
+"cmd": 0.027751,
+"cors": 0.035319,
+"csrf": 0.032376,
+"deserialization": 0.025901,
+"eval": 0.027751,
+"info_exposure": 0.022854,
+"insecure_random": 0.032376,
+"jwt_secret": 0.021584,
+"khac": 0.023885,
+"ma_doc": 0.038851,
+"open_redirect": 0.106809,
+"path": 0.188251,
+"prototype": 0.038851,
+"regex": 0.063114,
+"sqli": 0.025901,
+"ssrf": 0.021584,
+"validation": 0.024282,
+"weak_hash": 0.035319,
+"xac_thuc": 0.027751,
+"xss": 0.081677,
+"xxe": 0.032376
+},
+"bandit": {
+"access_control": 0.06,
+"bo_nho": 0.072727,
+"cmd": 0.271429,
+"cors": 0.072727,
+"csrf": 0.066667,
+"deserialization": 0.253333,
+"eval": 0.057143,
+"info_exposure": 0.047059,
+"insecure_random": 0.15,
+"jwt_secret": 0.1,
+"khac": 0.028,
+"ma_doc": 0.08,
+"open_redirect": 0.061538,
+"path": 0.1,
+"prototype": 0.08,
+"regex": 0.036364,
+"sqli": 0.186667,
+"ssrf": 0.044444,
+"validation": 0.1125,
+"weak_hash": 0.072727,
+"xac_thuc": 0.128571,
+"xss": 0.047059,
+"xxe": 0.066667
+}
+},
+"java": {
+"semgrep": {
+"access_control": 0.010325,
+"bo_nho": 0.030181,
+"cmd": 0.030181,
+"cors": 0.032696,
+"csrf": 0.019618,
+"deserialization": 0.099454,
+"eval": 0.028025,
+"info_exposure": 0.016348,
+"insecure_random": 0.030181,
+"jwt_secret": 0.028025,
+"khac": 0.01719,
+"ma_doc": 0.039235,
+"open_redirect": 0.035669,
+"path": 0.02308,
+"prototype": 0.039235,
+"regex": 0.02308,
+"sqli": 0.087022,
+"ssrf": 0.028025,
+"validation": 0.024522,
+"weak_hash": 0.030181,
+"xac_thuc": 0.035669,
+"xss": 0.018684,
+"xxe": 0.140727
+},
+"codeql": {
+"access_control": 0.010224,
+"bo_nho": 0.029886,
+"cmd": 0.029886,
+"cors": 0.032376,
+"csrf": 0.019426,
+"deserialization": 0.09918,
+"eval": 0.027751,
+"info_exposure": 0.016188,
+"insecure_random": 0.029886,
+"jwt_secret": 0.027751,
+"khac": 0.029488,
+"ma_doc": 0.038851,
+"open_redirect": 0.035319,
+"path": 0.140501,
+"prototype": 0.038851,
+"regex": 0.022854,
+"sqli": 0.024282,
+"ssrf": 0.027751,
+"validation": 0.024282,
+"weak_hash": 0.029886,
+"xac_thuc": 0.035319,
+"xss": 0.018501,
+"xxe": 0.022854
+}
+},
+"go": {
+"semgrep": {
+"access_control": 0.01189,
+"bo_nho": 0.035669,
+"cmd": 0.024522,
+"cors": 0.028025,
+"csrf": 0.032696,
+"deserialization": 0.035669,
+"eval": 0.126578,
+"info_exposure": 0.021797,
+"insecure_random": 0.11603,
+"jwt_secret": 0.021797,
+"khac": 0.003667,
+"ma_doc": 0.039235,
+"open_redirect": 0.035669,
+"path": 0.024522,
+"prototype": 0.039235,
+"regex": 0.016348,
+"sqli": 0.028025,
+"ssrf": 0.099454,
+"validation": 0.024522,
+"weak_hash": 0.030181,
+"xac_thuc": 0.028025,
+"xss": 0.024522,
+"xxe": 0.039235
+}
+},
+"php": {
+"semgrep": {
+"access_control": 0.009809,
+"bo_nho": 0.039235,
+"cmd": 0.125913,
+"cors": 0.035669,
+"csrf": 0.02308,
+"deserialization": 0.149522,
+"eval": 0.032696,
+"info_exposure": 0.019618,
+"insecure_random": 0.030181,
+"jwt_secret": 0.030181,
+"khac": 0.005449,
+"ma_doc": 0.039235,
+"open_redirect": 0.032696,
+"path": 0.024522,
+"prototype": 0.039235,
+"regex": 0.019618,
+"sqli": 0.108743,
+"ssrf": 0.188464,
+"validation": 0.024522,
+"weak_hash": 0.126578,
+"xac_thuc": 0.024522,
+"xss": 0.060537,
+"xxe": 0.028025
+}
+}
+},
+"prior": {
+"javascript": {
+"csrf": 0.011826953003423592,
+"regex": 0.09990662931839403,
+"khac": 0.20728291316526612,
+"xss": 0.14596949891067537,
+"validation": 0.03672580143168378,
+"access_control": 0.08714596949891068,
+"info_exposure": 0.05633364456893869,
+"xac_thuc": 0.014005602240896359,
+"path": 0.06442577030812324,
+"sqli": 0.01027077497665733,
+"insecure_random": 0.0040460628695922814,
+"prototype": 0.08590102707749767,
+"cmd": 0.06318082788671024,
+"ssrf": 0.03392468098350451,
+"open_redirect": 0.01556178026766262,
+"jwt_secret": 0.017117958294428883,
+"eval": 0.032679738562091505,
+"xxe": 0.0003112356053532524,
+"cors": 0.008092125739184563,
+"weak_hash": 0.0028011204481792717,
+"ma_doc": 0.0009337068160597573,
+"deserialization": 0.001556178026766262
+},
+"python": {
+"validation": 0.04475421863536317,
+"khac": 0.26705796038151136,
+"open_redirect": 0.02127659574468085,
+"xac_thuc": 0.025678650036683785,
+"path": 0.08070432868672046,
+"jwt_secret": 0.022743947175348497,
+"access_control": 0.09611151870873075,
+"xxe": 0.011005135730007337,
+"cmd": 0.04402054292002935,
+"regex": 0.07703595011005136,
+"eval": 0.04181951577402788,
+"deserialization": 0.03008070432868672,
+"info_exposure": 0.07336757153338225,
+"xss": 0.08950843727072634,
+"sqli": 0.018341892883345562,
+"weak_hash": 0.00293470286133529,
+"ssrf": 0.03008070432868672,
+"csrf": 0.012472487160674981,
+"insecure_random": 0.00586940572267058,
+"prototype": 0.001467351430667645,
+"cors": 0.00293470286133529,
+"bo_nho": 0.0007336757153338225
+},
+"java": {
+"bo_nho": 0.0062724014336917565,
+"regex": 0.04032258064516129,
+"info_exposure": 0.0985663082437276,
+"khac": 0.2168458781362007,
+"access_control": 0.12634408602150538,
+"xxe": 0.07974910394265233,
+"xss": 0.0913978494623656,
+"ssrf": 0.015232974910394265,
+"path": 0.06810035842293907,
+"eval": 0.017025089605734768,
+"jwt_secret": 0.010752688172043012,
+"cmd": 0.02060931899641577,
+"sqli": 0.017025089605734768,
+"cors": 0.002688172043010753,
+"xac_thuc": 0.016129032258064516,
+"deserialization": 0.033154121863799284,
+"csrf": 0.06630824372759857,
+"open_redirect": 0.011648745519713262,
+"validation": 0.051075268817204304,
+"insecure_random": 0.005376344086021506,
+"prototype": 0.0008960573476702509,
+"weak_hash": 0.004480286738351254
+},
+"go": {
+"khac": 0.3173948887056884,
+"xac_thuc": 0.036273701566364384,
+"xss": 0.038746908491343775,
+"access_control": 0.1574608408903545,
+"info_exposure": 0.07666941467436109,
+"regex": 0.0898598516075845,
+"jwt_secret": 0.03297609233305853,
+"cmd": 0.0403957131079967,
+"path": 0.0585325638911789,
+"validation": 0.04699093157460841,
+"weak_hash": 0.00494641384995878,
+"open_redirect": 0.015663643858202802,
+"eval": 0.00741962077493817,
+"deserialization": 0.00247320692497939,
+"insecure_random": 0.00741962077493817,
+"ssrf": 0.023083264633140973,
+"sqli": 0.020610057708161583,
+"cors": 0.00741962077493817,
+"csrf": 0.013190436933223413,
+"bo_nho": 0.00247320692497939
+},
+"php": {
+"access_control": 0.084,
+"xss": 0.284,
+"insecure_random": 0.0088,
+"csrf": 0.0392,
+"info_exposure": 0.0536,
+"cmd": 0.0456,
+"path": 0.044,
+"khac": 0.1912,
+"regex": 0.024,
+"cors": 0.0016,
+"deserialization": 0.0248,
+"sqli": 0.056,
+"xxe": 0.0112,
+"jwt_secret": 0.008,
+"ssrf": 0.0176,
+"eval": 0.028,
+"xac_thuc": 0.0216,
+"validation": 0.0408,
+"open_redirect": 0.0128,
+"weak_hash": 0.0024,
+"prototype": 0.0008
+}
+},
+"thong_tin_o": {
+"javascript|semgrep|access_control": {
+"m": 21,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"javascript|codeql|access_control": {
+"m": 21,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"javascript|njsscan|access_control": {
+"m": 21,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"javascript|eslint_security|access_control": {
+"m": 0,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"javascript|eslint_mo_rong|access_control": {
+"m": 0,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"javascript|semgrep|bo_nho": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"javascript|codeql|bo_nho": {
+"m": 0,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"javascript|njsscan|bo_nho": {
+"m": 0,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"javascript|eslint_security|bo_nho": {
+"m": 0,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"javascript|eslint_mo_rong|bo_nho": {
+"m": 0,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"javascript|semgrep|cmd": {
+"m": 8,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"javascript|codeql|cmd": {
+"m": 8,
+"k": 1,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"javascript|njsscan|cmd": {
+"m": 8,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"javascript|eslint_security|cmd": {
+"m": 3,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"javascript|eslint_mo_rong|cmd": {
+"m": 3,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"javascript|semgrep|cors": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"javascript|codeql|cors": {
+"m": 6,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"javascript|njsscan|cors": {
+"m": 6,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"javascript|eslint_security|cors": {
+"m": 2,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"javascript|eslint_mo_rong|cors": {
+"m": 2,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"javascript|semgrep|csrf": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"javascript|codeql|csrf": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"javascript|njsscan|csrf": {
+"m": 4,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"javascript|eslint_security|csrf": {
+"m": 3,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"javascript|eslint_mo_rong|csrf": {
+"m": 3,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"javascript|semgrep|deserialization": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"javascript|codeql|deserialization": {
+"m": 0,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"javascript|njsscan|deserialization": {
+"m": 0,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"javascript|eslint_security|deserialization": {
+"m": 0,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"javascript|eslint_mo_rong|deserialization": {
+"m": 0,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"javascript|semgrep|eval": {
+"m": 5,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"javascript|codeql|eval": {
+"m": 5,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"javascript|njsscan|eval": {
+"m": 5,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"javascript|eslint_security|eval": {
+"m": 2,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"javascript|eslint_mo_rong|eval": {
+"m": 2,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"javascript|semgrep|info_exposure": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"javascript|codeql|info_exposure": {
+"m": 6,
+"k": 1,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"javascript|njsscan|info_exposure": {
+"m": 6,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"javascript|eslint_security|info_exposure": {
+"m": 2,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"javascript|eslint_mo_rong|info_exposure": {
+"m": 2,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"javascript|semgrep|insecure_random": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"javascript|codeql|insecure_random": {
+"m": 1,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"javascript|njsscan|insecure_random": {
+"m": 1,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"javascript|eslint_security|insecure_random": {
+"m": 1,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"javascript|eslint_mo_rong|insecure_random": {
+"m": 1,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"javascript|semgrep|jwt_secret": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"javascript|codeql|jwt_secret": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"javascript|njsscan|jwt_secret": {
+"m": 4,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"javascript|eslint_security|jwt_secret": {
+"m": 2,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"javascript|eslint_mo_rong|jwt_secret": {
+"m": 2,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"javascript|semgrep|khac": {
+"m": 79,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"javascript|codeql|khac": {
+"m": 79,
+"k": 3,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"javascript|njsscan|khac": {
+"m": 79,
+"k": 1,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"javascript|eslint_security|khac": {
+"m": 38,
+"k": 2,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"javascript|eslint_mo_rong|khac": {
+"m": 38,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"javascript|semgrep|ma_doc": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"javascript|codeql|ma_doc": {
+"m": 1,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"javascript|njsscan|ma_doc": {
+"m": 1,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"javascript|eslint_security|ma_doc": {
+"m": 1,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"javascript|eslint_mo_rong|ma_doc": {
+"m": 1,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"javascript|semgrep|open_redirect": {
+"m": 3,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"javascript|codeql|open_redirect": {
+"m": 3,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"javascript|njsscan|open_redirect": {
+"m": 3,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"javascript|eslint_security|open_redirect": {
+"m": 1,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"javascript|eslint_mo_rong|open_redirect": {
+"m": 1,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"javascript|semgrep|path": {
+"m": 6,
+"k": 2,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"javascript|codeql|path": {
+"m": 6,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"javascript|njsscan|path": {
+"m": 6,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"javascript|eslint_security|path": {
+"m": 2,
+"k": 1,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"javascript|eslint_mo_rong|path": {
+"m": 2,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"javascript|semgrep|prototype": {
+"m": 8,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"javascript|codeql|prototype": {
+"m": 8,
+"k": 2,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"javascript|njsscan|prototype": {
+"m": 8,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"javascript|eslint_security|prototype": {
+"m": 5,
+"k": 1,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"javascript|eslint_mo_rong|prototype": {
+"m": 5,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"javascript|semgrep|regex": {
+"m": 12,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"javascript|codeql|regex": {
+"m": 12,
+"k": 1,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"javascript|njsscan|regex": {
+"m": 12,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"javascript|eslint_security|regex": {
+"m": 9,
+"k": 2,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"javascript|eslint_mo_rong|regex": {
+"m": 9,
+"k": 2,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"javascript|semgrep|sqli": {
+"m": 3,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"javascript|codeql|sqli": {
+"m": 3,
+"k": 1,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"javascript|njsscan|sqli": {
+"m": 3,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"javascript|eslint_security|sqli": {
+"m": 1,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"javascript|eslint_mo_rong|sqli": {
+"m": 1,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"javascript|semgrep|ssrf": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"javascript|codeql|ssrf": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"javascript|njsscan|ssrf": {
+"m": 4,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"javascript|eslint_security|ssrf": {
+"m": 0,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"javascript|eslint_mo_rong|ssrf": {
+"m": 0,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"javascript|semgrep|validation": {
+"m": 4,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"javascript|codeql|validation": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"javascript|njsscan|validation": {
+"m": 4,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"javascript|eslint_security|validation": {
+"m": 2,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"javascript|eslint_mo_rong|validation": {
+"m": 2,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"javascript|semgrep|weak_hash": {
+"m": 3,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"javascript|codeql|weak_hash": {
+"m": 3,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"javascript|njsscan|weak_hash": {
+"m": 3,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"javascript|eslint_security|weak_hash": {
+"m": 3,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"javascript|eslint_mo_rong|weak_hash": {
+"m": 3,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"javascript|semgrep|xac_thuc": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"javascript|codeql|xac_thuc": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"javascript|njsscan|xac_thuc": {
+"m": 4,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"javascript|eslint_security|xac_thuc": {
+"m": 2,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"javascript|eslint_mo_rong|xac_thuc": {
+"m": 2,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"javascript|semgrep|xss": {
+"m": 11,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"javascript|codeql|xss": {
+"m": 11,
+"k": 1,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"javascript|njsscan|xss": {
+"m": 11,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"javascript|eslint_security|xss": {
+"m": 4,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"javascript|eslint_mo_rong|xss": {
+"m": 4,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"javascript|semgrep|xxe": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"javascript|codeql|xxe": {
+"m": 0,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"javascript|njsscan|xxe": {
+"m": 0,
+"k": 0,
+"mu": 0.005181,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"javascript|eslint_security|xxe": {
+"m": 0,
+"k": 0,
+"mu": 0.072289,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"javascript|eslint_mo_rong|xxe": {
+"m": 0,
+"k": 0,
+"mu": 0.024096,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"python|semgrep|access_control": {
+"m": 20,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"python|codeql|access_control": {
+"m": 20,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"python|bandit|access_control": {
+"m": 20,
+"k": 1,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"python|semgrep|bo_nho": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"python|codeql|bo_nho": {
+"m": 1,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"python|bandit|bo_nho": {
+"m": 1,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"python|semgrep|cmd": {
+"m": 4,
+"k": 3,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"python|codeql|cmd": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"python|bandit|cmd": {
+"m": 4,
+"k": 3,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"python|semgrep|cors": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"python|codeql|cors": {
+"m": 1,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"python|bandit|cors": {
+"m": 1,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"python|semgrep|csrf": {
+"m": 2,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"python|codeql|csrf": {
+"m": 2,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"python|bandit|csrf": {
+"m": 2,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"python|semgrep|deserialization": {
+"m": 5,
+"k": 4,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"python|codeql|deserialization": {
+"m": 5,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"python|bandit|deserialization": {
+"m": 5,
+"k": 3,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"python|semgrep|eval": {
+"m": 4,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"python|codeql|eval": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"python|bandit|eval": {
+"m": 4,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"python|semgrep|info_exposure": {
+"m": 7,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"python|codeql|info_exposure": {
+"m": 7,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"python|bandit|info_exposure": {
+"m": 7,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"python|semgrep|insecure_random": {
+"m": 2,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"python|codeql|insecure_random": {
+"m": 2,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"python|bandit|insecure_random": {
+"m": 2,
+"k": 1,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"python|semgrep|jwt_secret": {
+"m": 8,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"python|codeql|jwt_secret": {
+"m": 8,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"python|bandit|jwt_secret": {
+"m": 8,
+"k": 1,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"python|semgrep|khac": {
+"m": 90,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"python|codeql|khac": {
+"m": 90,
+"k": 2,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"python|bandit|khac": {
+"m": 90,
+"k": 2,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"python|semgrep|ma_doc": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"python|codeql|ma_doc": {
+"m": 0,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"python|bandit|ma_doc": {
+"m": 0,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"python|semgrep|open_redirect": {
+"m": 3,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"python|codeql|open_redirect": {
+"m": 3,
+"k": 1,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"python|bandit|open_redirect": {
+"m": 3,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"python|semgrep|path": {
+"m": 8,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"python|codeql|path": {
+"m": 8,
+"k": 3,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"python|bandit|path": {
+"m": 8,
+"k": 1,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"python|semgrep|prototype": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"python|codeql|prototype": {
+"m": 0,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"python|bandit|prototype": {
+"m": 0,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"python|semgrep|regex": {
+"m": 12,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"python|codeql|regex": {
+"m": 12,
+"k": 1,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"python|bandit|regex": {
+"m": 12,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"python|semgrep|sqli": {
+"m": 5,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"python|codeql|sqli": {
+"m": 5,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"python|bandit|sqli": {
+"m": 5,
+"k": 2,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"python|semgrep|ssrf": {
+"m": 8,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"python|codeql|ssrf": {
+"m": 8,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"python|bandit|ssrf": {
+"m": 8,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"python|semgrep|validation": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"python|codeql|validation": {
+"m": 6,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"python|bandit|validation": {
+"m": 6,
+"k": 1,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"python|semgrep|weak_hash": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"python|codeql|weak_hash": {
+"m": 1,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"python|bandit|weak_hash": {
+"m": 1,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"python|semgrep|xac_thuc": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"python|codeql|xac_thuc": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"python|bandit|xac_thuc": {
+"m": 4,
+"k": 1,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"python|semgrep|xss": {
+"m": 7,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"python|codeql|xss": {
+"m": 7,
+"k": 1,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"python|bandit|xss": {
+"m": 7,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"python|semgrep|xxe": {
+"m": 2,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"python|codeql|xxe": {
+"m": 2,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"python|bandit|xxe": {
+"m": 2,
+"k": 0,
+"mu": 0.08,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"java|semgrep|access_control": {
+"m": 28,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"java|codeql|access_control": {
+"m": 28,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"java|semgrep|bo_nho": {
+"m": 3,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"java|codeql|bo_nho": {
+"m": 3,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"java|semgrep|cmd": {
+"m": 3,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"java|codeql|cmd": {
+"m": 3,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"java|semgrep|cors": {
+"m": 2,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"java|codeql|cors": {
+"m": 2,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"java|semgrep|csrf": {
+"m": 10,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"java|codeql|csrf": {
+"m": 10,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"java|semgrep|deserialization": {
+"m": 4,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"java|codeql|deserialization": {
+"m": 4,
+"k": 1,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"java|semgrep|eval": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"java|codeql|eval": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"java|semgrep|info_exposure": {
+"m": 14,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"java|codeql|info_exposure": {
+"m": 14,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"java|semgrep|insecure_random": {
+"m": 3,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"java|codeql|insecure_random": {
+"m": 3,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"java|semgrep|jwt_secret": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"java|codeql|jwt_secret": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"java|semgrep|khac": {
+"m": 71,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"java|codeql|khac": {
+"m": 71,
+"k": 2,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"java|semgrep|ma_doc": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"java|codeql|ma_doc": {
+"m": 0,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"java|semgrep|open_redirect": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"java|codeql|open_redirect": {
+"m": 1,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"java|semgrep|path": {
+"m": 7,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"java|codeql|path": {
+"m": 7,
+"k": 2,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"java|semgrep|prototype": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"java|codeql|prototype": {
+"m": 0,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"java|semgrep|regex": {
+"m": 7,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"java|codeql|regex": {
+"m": 7,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"java|semgrep|sqli": {
+"m": 6,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"java|codeql|sqli": {
+"m": 6,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"java|semgrep|ssrf": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"java|codeql|ssrf": {
+"m": 4,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"java|semgrep|validation": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"java|codeql|validation": {
+"m": 6,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"java|semgrep|weak_hash": {
+"m": 3,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"java|codeql|weak_hash": {
+"m": 3,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"java|semgrep|xac_thuc": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"java|codeql|xac_thuc": {
+"m": 1,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"java|semgrep|xss": {
+"m": 11,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"java|codeql|xss": {
+"m": 11,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"java|semgrep|xxe": {
+"m": 7,
+"k": 2,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"java|codeql|xxe": {
+"m": 7,
+"k": 0,
+"mu": 0.038851,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"go|semgrep|access_control": {
+"m": 23,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"go|semgrep|bo_nho": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"go|semgrep|cmd": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"go|semgrep|cors": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"go|semgrep|csrf": {
+"m": 2,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"go|semgrep|deserialization": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"go|semgrep|eval": {
+"m": 1,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"go|semgrep|info_exposure": {
+"m": 8,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"go|semgrep|insecure_random": {
+"m": 2,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"go|semgrep|jwt_secret": {
+"m": 8,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"go|semgrep|khac": {
+"m": 97,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"go|semgrep|ma_doc": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"go|semgrep|open_redirect": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"go|semgrep|path": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"go|semgrep|prototype": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"go|semgrep|regex": {
+"m": 14,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"go|semgrep|sqli": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"go|semgrep|ssrf": {
+"m": 4,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"go|semgrep|validation": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"go|semgrep|weak_hash": {
+"m": 3,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"go|semgrep|xac_thuc": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"go|semgrep|xss": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"go|semgrep|xxe": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+},
+"php|semgrep|access_control": {
+"m": 30,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"xac_thuc",
+0.799
+],
+[
+"khac",
+0.674
+],
+[
+"info_exposure",
+0.593
+]
+]
+},
+"php|semgrep|bo_nho": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"regex",
+0.824
+],
+[
+"khac",
+0.764
+],
+[
+"deserialization",
+0.726
+]
+]
+},
+"php|semgrep|cmd": {
+"m": 9,
+"k": 2,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"eval",
+0.805
+],
+[
+"sqli",
+0.737
+],
+[
+"validation",
+0.72
+]
+]
+},
+"php|semgrep|cors": {
+"m": 1,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.928
+],
+[
+"insecure_random",
+0.911
+],
+[
+"csrf",
+0.856
+]
+]
+},
+"php|semgrep|csrf": {
+"m": 7,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cors",
+0.856
+],
+[
+"insecure_random",
+0.794
+],
+[
+"weak_hash",
+0.781
+]
+]
+},
+"php|semgrep|deserialization": {
+"m": 6,
+"k": 2,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.726
+],
+[
+"khac",
+0.616
+],
+[
+"regex",
+0.609
+]
+]
+},
+"php|semgrep|eval": {
+"m": 2,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"cmd",
+0.805
+],
+[
+"sqli",
+0.623
+],
+[
+"validation",
+0.6
+]
+]
+},
+"php|semgrep|info_exposure": {
+"m": 10,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"khac",
+0.751
+],
+[
+"bo_nho",
+0.625
+],
+[
+"ssrf",
+0.617
+]
+]
+},
+"php|semgrep|insecure_random": {
+"m": 3,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.96
+],
+[
+"cors",
+0.911
+],
+[
+"csrf",
+0.794
+]
+]
+},
+"php|semgrep|jwt_secret": {
+"m": 3,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"weak_hash",
+0.861
+],
+[
+"cors",
+0.826
+],
+[
+"insecure_random",
+0.773
+]
+]
+},
+"php|semgrep|khac": {
+"m": 62,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.764
+],
+[
+"info_exposure",
+0.751
+],
+[
+"regex",
+0.713
+]
+]
+},
+"php|semgrep|ma_doc": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"validation",
+0.704
+],
+[
+"jwt_secret",
+0.583
+],
+[
+"khac",
+0.5
+]
+]
+},
+"php|semgrep|open_redirect": {
+"m": 2,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"ssrf",
+0.713
+],
+[
+"khac",
+0.691
+],
+[
+"regex",
+0.688
+]
+]
+},
+"php|semgrep|path": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.699
+],
+[
+"khac",
+0.612
+],
+[
+"open_redirect",
+0.585
+]
+]
+},
+"php|semgrep|prototype": {
+"m": 0,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.667
+],
+[
+"regex",
+0.644
+],
+[
+"khac",
+0.625
+]
+]
+},
+"php|semgrep|regex": {
+"m": 10,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.824
+],
+[
+"khac",
+0.713
+],
+[
+"open_redirect",
+0.688
+]
+]
+},
+"php|semgrep|sqli": {
+"m": 12,
+"k": 2,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.737
+],
+[
+"validation",
+0.708
+],
+[
+"xss",
+0.653
+]
+]
+},
+"php|semgrep|ssrf": {
+"m": 8,
+"k": 3,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"open_redirect",
+0.713
+],
+[
+"khac",
+0.712
+],
+[
+"bo_nho",
+0.675
+]
+]
+},
+"php|semgrep|validation": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.72
+],
+[
+"sqli",
+0.708
+],
+[
+"ma_doc",
+0.704
+]
+]
+},
+"php|semgrep|weak_hash": {
+"m": 1,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"insecure_random",
+0.96
+],
+[
+"cors",
+0.928
+],
+[
+"jwt_secret",
+0.861
+]
+]
+},
+"php|semgrep|xac_thuc": {
+"m": 6,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"access_control",
+0.799
+],
+[
+"jwt_secret",
+0.651
+],
+[
+"khac",
+0.577
+]
+]
+},
+"php|semgrep|xss": {
+"m": 13,
+"k": 1,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": false,
+"ho_lang_gieng": [
+[
+"cmd",
+0.663
+],
+[
+"sqli",
+0.653
+],
+[
+"validation",
+0.555
+]
+]
+},
+"php|semgrep|xxe": {
+"m": 4,
+"k": 0,
+"mu": 0.039235,
+"nguon": "ty_le_cong_cu",
+"it_mau": true,
+"ho_lang_gieng": [
+[
+"bo_nho",
+0.693
+],
+[
+"open_redirect",
+0.651
+],
+[
+"khac",
+0.647
+]
+]
+}
+},
+"danh_gia": {
+"so_cap": 2145,
+"so_duong": 87,
+"kappa_chon": {
+"A0=10": 4,
+"A1=30": 3,
+"A1=10": 2,
+"A0=30": 1
+},
+"A0": {
+"brier": 0.037307823576711675,
+"logloss": 0.15813845553665962,
+"auc": 0.7130625649274488
+},
+"A1": {
+"brier": 0.03712929700772886,
+"logloss": 0.1546996988487164,
+"auc": 0.7303402477575595
+},
+"A2": {
+"brier": 0.03791904268314061,
+"logloss": 0.15842778682252107,
+"auc": 0.7457469030305061
+},
+"hieu_A1_tru_A0": {
+"brier": [
+-0.0001785265689828175,
+-0.0005038637866587613,
+0.0001615471212859336
+],
+"logloss": [
+-0.0034387566879432174,
+-0.008421112586373616,
+0.0008989285837364066
+]
+},
+"bang_dung": "A0"
+}
+}

@@ -1,0 +1,650 @@
+{
+ "semgrep": {
+  "pha": "Code",
+  "dau_vao": "mã nguồn JS/TS, Python, Java, Go, PHP",
+  "pham_vi": "lỗi mã nguồn theo bộ luật semgrep-rules 9bbf021d",
+  "nguon_xac_suat_bat_loi": "học từ 7003 ca thư viện (5 ngôn ngữ) + 1152 CVE ứng dụng thật (Go, PHP, Python, JS/TS, Java)",
+  "thoi_gian": {
+   "mo_hinh": "san+doc|kb_ngon_ngu",
+   "he_so": {
+    "san_theo_ngon_ngu_s": {
+     "javascript": 13.909,
+     "typescript": 15.462,
+     "python": 20.457,
+     "java": 8.297,
+     "go": 6.287,
+     "php": 5.559
+    },
+    "b": 0.0034001063555100376,
+    "bien": "kb_ngon_ngu",
+    "cong_thuc": "san(ngon ngu, do tren fixture 1 tep) + b * bien"
+   },
+   "dat_T3": true,
+   "sai_so_trung_vi": 0.109,
+   "khoang_p10_p90_s": [
+    6.1,
+    25.8
+   ],
+   "cv_lap": 0.024,
+   "cach_dung_trong_bo_chon": "công thức"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.375,
+   "don_vi": "cảnh báo/1000 dòng mã",
+   "ty_le_dung_mau": 0.375,
+   "wilson95": [
+    0.242,
+    0.53
+   ],
+   "mau": 40,
+   "khong_ro": 0,
+   "cau_hinh": "khuyến nghị bước 13 (bỏ test/docs/examples/vendor; semgrep chỉ category=security; bandit bỏ B101; ESLint tắt detect-object-injection; ESLint mở rộng chỉ luật có CWE)",
+   "ban_cu": {
+    "khoi_luong_trung_vi": 1.1,
+    "don_vi": "cảnh báo/1000 dòng mã",
+    "ty_le_dung_mau": 0.211,
+    "wilson95": [
+     0.085,
+     0.433
+    ],
+    "mau": 20,
+    "khong_ro": 1
+   }
+  }
+ },
+ "njsscan": {
+  "pha": "Code",
+  "dau_vao": "mã JS/TS",
+  "pham_vi": "lỗi mã Node.js",
+  "nguon_xac_suat_bat_loi": "học từ 3035 ca JS/TS thư viện + 178 CVE ứng dụng JS/TS",
+  "thoi_gian": {
+   "mo_hinh": "tuyen|kb_ngon_ngu",
+   "he_so": {
+    "a": 6.259,
+    "b": 0.010745719001386843,
+    "bien": "kb_ngon_ngu"
+   },
+   "dat_T3": false,
+   "sai_so_trung_vi": 0.399,
+   "khoang_p10_p90_s": [
+    6.1,
+    36.2
+   ],
+   "cv_lap": 0.019,
+   "cach_dung_trong_bo_chon": "cận trên p90 (công thức chưa đạt T3)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.244,
+   "don_vi": "cảnh báo/1000 dòng mã",
+   "ty_le_dung_mau": 0.2,
+   "wilson95": [
+    0.105,
+    0.348
+   ],
+   "mau": 40,
+   "khong_ro": 0,
+   "cau_hinh": "khuyến nghị bước 13 (bỏ test/docs/examples/vendor; semgrep chỉ category=security; bandit bỏ B101; ESLint tắt detect-object-injection; ESLint mở rộng chỉ luật có CWE)",
+   "ban_cu": {
+    "khoi_luong_trung_vi": 1.57,
+    "don_vi": "cảnh báo/1000 dòng mã",
+    "ty_le_dung_mau": 0.2,
+    "wilson95": [
+     0.081,
+     0.416
+    ],
+    "mau": 20,
+    "khong_ro": 0
+   }
+  }
+ },
+ "eslint_security": {
+  "pha": "Code",
+  "dau_vao": "tệp .js/.mjs/.cjs (KHÔNG quét .ts)",
+  "pham_vi": "mẫu nguy hiểm JS",
+  "nguon_xac_suat_bat_loi": "học từ 1548 ca JS thư viện (bỏ detect-object-injection) + 65 CVE ứng dụng JS",
+  "thoi_gian": {
+   "mo_hinh": "tuyen|js_kb",
+   "he_so": {
+    "a": 0.918,
+    "b": 0.001006165544851136,
+    "bien": "js_kb"
+   },
+   "dat_T3": true,
+   "sai_so_trung_vi": 0.281,
+   "khoang_p10_p90_s": [
+    1.0,
+    2.4
+   ],
+   "cv_lap": 0.041,
+   "cach_dung_trong_bo_chon": "công thức"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.112,
+   "don_vi": "cảnh báo/1000 dòng mã",
+   "ty_le_dung_mau": 0.217,
+   "wilson95": [
+    0.097,
+    0.419
+   ],
+   "mau": 23,
+   "khong_ro": 0,
+   "cau_hinh": "khuyến nghị bước 13 (bỏ test/docs/examples/vendor; semgrep chỉ category=security; bandit bỏ B101; ESLint tắt detect-object-injection; ESLint mở rộng chỉ luật có CWE)",
+   "ban_cu": {
+    "khoi_luong_trung_vi": 12.1,
+    "don_vi": "cảnh báo/1000 dòng mã",
+    "ty_le_dung_mau": 0.0,
+    "wilson95": [
+     0.0,
+     0.161
+    ],
+    "mau": 20,
+    "khong_ro": 0
+   }
+  }
+ },
+ "eslint_mo_rong": {
+  "pha": "Code",
+  "dau_vao": "tệp .js/.mjs/.cjs (KHÔNG quét .ts)",
+  "pham_vi": "no-unsanitized + toàn bộ luật regexp (nhiều luật phong cách)",
+  "nguon_xac_suat_bat_loi": "học từ 1548 ca JS thư viện + 65 CVE ứng dụng JS",
+  "thoi_gian": {
+   "mo_hinh": "hang|None",
+   "he_so": null,
+   "dat_T3": false,
+   "sai_so_trung_vi": 0.104,
+   "khoang_p10_p90_s": [
+    1.4,
+    2.6
+   ],
+   "cv_lap": 0.025,
+   "cach_dung_trong_bo_chon": "cận trên p90 (công thức chưa đạt T3)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.028,
+   "don_vi": "cảnh báo/1000 dòng mã",
+   "ty_le_dung_mau": 0.3,
+   "wilson95": [
+    0.108,
+    0.603
+   ],
+   "mau": 10,
+   "khong_ro": 0,
+   "cau_hinh": "khuyến nghị bước 13 (bỏ test/docs/examples/vendor; semgrep chỉ category=security; bandit bỏ B101; ESLint tắt detect-object-injection; ESLint mở rộng chỉ luật có CWE)",
+   "ban_cu": {
+    "khoi_luong_trung_vi": 14.7,
+    "don_vi": "cảnh báo/1000 dòng mã",
+    "ty_le_dung_mau": 0.0,
+    "wilson95": [
+     0.0,
+     0.161
+    ],
+    "mau": 20,
+    "khong_ro": 0
+   }
+  }
+ },
+ "bandit": {
+  "pha": "Code",
+  "dau_vao": "mã Python",
+  "pham_vi": "lỗi mã Python",
+  "nguon_xac_suat_bat_loi": "học từ 1124 ca Python thư viện + 239 CVE ứng dụng Python",
+  "thoi_gian": {
+   "mo_hinh": "tuyen|kb_ngon_ngu",
+   "he_so": {
+    "a": 0.219,
+    "b": 0.0015767543708175625,
+    "bien": "kb_ngon_ngu"
+   },
+   "dat_T3": true,
+   "sai_so_trung_vi": 0.04,
+   "khoang_p10_p90_s": [
+    0.3,
+    4.5
+   ],
+   "cv_lap": 0.142,
+   "cach_dung_trong_bo_chon": "công thức"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.937,
+   "don_vi": "cảnh báo/1000 dòng mã",
+   "ty_le_dung_mau": 0.425,
+   "wilson95": [
+    0.285,
+    0.578
+   ],
+   "mau": 40,
+   "khong_ro": 0,
+   "cau_hinh": "khuyến nghị bước 13 (bỏ test/docs/examples/vendor; semgrep chỉ category=security; bandit bỏ B101; ESLint tắt detect-object-injection; ESLint mở rộng chỉ luật có CWE)",
+   "ban_cu": {
+    "khoi_luong_trung_vi": 48.81,
+    "don_vi": "cảnh báo/1000 dòng mã",
+    "ty_le_dung_mau": 0.3,
+    "wilson95": [
+     0.145,
+     0.519
+    ],
+    "mau": 20,
+    "khong_ro": 0
+   }
+  }
+ },
+ "codeql": {
+  "pha": "Code",
+  "dau_vao": "JS/TS, Python, Java (build-mode none); Go cần build → loại",
+  "pham_vi": "lỗi luồng dữ liệu",
+  "nguon_xac_suat_bat_loi": "học từ 5200 ca JS/TS, Python, Java thư viện + 492 CVE ứng dụng (JS/TS, Python, Java)",
+  "thoi_gian": {
+   "mo_hinh": "san+doc|kb_ngon_ngu",
+   "he_so": {
+    "san_theo_ngon_ngu_s": {
+     "javascript": 50.661,
+     "typescript": 42.625,
+     "python": 23.285,
+     "java": 60.917
+    },
+    "b": 0.012348799940247141,
+    "bien": "kb_ngon_ngu",
+    "cong_thuc": "san(ngon ngu, do tren fixture 1 tep) + b * bien"
+   },
+   "dat_T3": true,
+   "sai_so_trung_vi": 0.198,
+   "khoang_p10_p90_s": [
+    31.9,
+    83.7
+   ],
+   "cv_lap": 0.006,
+   "cach_dung_trong_bo_chon": "công thức"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.017,
+   "don_vi": "cảnh báo/1000 dòng mã",
+   "ty_le_dung_mau": 0.5,
+   "wilson95": [
+    0.352,
+    0.648
+   ],
+   "mau": 40,
+   "khong_ro": 0,
+   "cau_hinh": "khuyến nghị bước 13 (bỏ test/docs/examples/vendor; semgrep chỉ category=security; bandit bỏ B101; ESLint tắt detect-object-injection; ESLint mở rộng chỉ luật có CWE)",
+   "ban_cu": {
+    "khoi_luong_trung_vi": 0.31,
+    "don_vi": "cảnh báo/1000 dòng mã",
+    "ty_le_dung_mau": 0.389,
+    "wilson95": [
+     0.203,
+     0.614
+    ],
+    "mau": 20,
+    "khong_ro": 2
+   }
+  }
+ },
+ "gitleaks": {
+  "pha": "Code",
+  "dau_vao": "mọi repo (quét cây tệp, không quét lịch sử git)",
+  "pham_vi": "bí mật: khóa AWS, token GitHub, Slack, khóa riêng…",
+  "nguon_xac_suat_bat_loi": "bước 4a, bộ bí mật E4: 43/48 (CI 78–96%), 0/33 mồi nhử",
+  "thoi_gian": {
+   "mo_hinh": "tuyen|tong_tep",
+   "he_so": {
+    "a": 0.55,
+    "b": 0.0004304931756507755,
+    "bien": "tong_tep"
+   },
+   "dat_T3": true,
+   "sai_so_trung_vi": 0.069,
+   "khoang_p10_p90_s": [
+    0.5,
+    1.1
+   ],
+   "cv_lap": 0.055,
+   "cach_dung_trong_bo_chon": "công thức"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.6,
+   "don_vi": "cảnh báo/MB repo",
+   "ty_le_dung_mau": 0.0,
+   "wilson95": [
+    0.0,
+    0.161
+   ],
+   "mau": 20,
+   "khong_ro": 0
+  }
+ },
+ "osv-scanner": {
+  "pha": "Build",
+  "dau_vao": "lockfile/manifest có phiên bản: npm, PyPI, Go, Maven/Gradle, composer, Gemfile, Cargo, NuGet",
+  "pham_vi": "thư viện có lỗ hổng đã biết (DB offline GHSA)",
+  "nguon_xac_suat_bat_loi": "tầng 2 (tang2_build): bắt 473/473 lỗ hổng phụ thuộc trên 91 dự án npm (Wilson95 99,2–100%), 0/10 báo nhầm trên dự án sạch",
+  "thoi_gian": {
+   "mo_hinh": "tuyen|so_goi_syft",
+   "he_so": {
+    "a": 0.434,
+    "b": 0.0021712886283196836,
+    "bien": "so_goi_syft"
+   },
+   "dat_T3": true,
+   "sai_so_trung_vi": 0.122,
+   "khoang_p10_p90_s": [
+    0.5,
+    1.5
+   ],
+   "cv_lap": 0.051,
+   "cach_dung_trong_bo_chon": "công thức"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.08,
+   "don_vi": "cảnh báo/gói",
+   "ty_le_dung_mau": 1.0,
+   "wilson95": [
+    0.839,
+    1.0
+   ],
+   "mau": 20,
+   "khong_ro": 0
+  }
+ },
+ "syft": {
+  "pha": "Build",
+  "dau_vao": "mọi repo",
+  "pham_vi": "chỉ liệt kê SBOM, không cảnh báo",
+  "nguon_xac_suat_bat_loi": "không áp dụng",
+  "thoi_gian": {
+   "mo_hinh": "tuyen|tong_kb",
+   "he_so": {
+    "a": 1.439,
+    "b": 8.131360814952755e-06,
+    "bien": "tong_kb"
+   },
+   "dat_T3": false,
+   "sai_so_trung_vi": 0.048,
+   "khoang_p10_p90_s": [
+    1.4,
+    1.6
+   ],
+   "cv_lap": 0.043,
+   "cach_dung_trong_bo_chon": "cận trên p90 (công thức chưa đạt T3)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.0,
+   "don_vi": "cảnh báo/1000 dòng mã",
+   "ty_le_dung_mau": null,
+   "wilson95": null,
+   "mau": null,
+   "khong_ro": null
+  }
+ },
+ "trivy": {
+  "pha": "Build/Deploy",
+  "dau_vao": "Dockerfile, Terraform, CloudFormation, Kubernetes (KHÔNG docker-compose, KHÔNG GitHub Actions)",
+  "pham_vi": "cấu hình sai + bí mật",
+  "nguon_xac_suat_bat_loi": "bước 4a: bí mật E4 36/48 (61–85%); cấu hình E5 chấm chặt 16/23 (49–84%), GitHub Actions 0/4",
+  "thoi_gian": {
+   "mo_hinh": "hang|None",
+   "he_so": null,
+   "dat_T3": false,
+   "sai_so_trung_vi": 0.077,
+   "khoang_p10_p90_s": [
+    1.0,
+    1.6
+   ],
+   "cv_lap": 0.052,
+   "cach_dung_trong_bo_chon": "cận trên p90 (công thức chưa đạt T3)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.67,
+   "don_vi": "cảnh báo/tệp cấu hình",
+   "ty_le_dung_mau": 0.35,
+   "wilson95": [
+    0.181,
+    0.567
+   ],
+   "mau": 20,
+   "khong_ro": 0
+  }
+ },
+ "checkov": {
+  "pha": "Deploy",
+  "dau_vao": "Dockerfile, Terraform, CloudFormation, Kubernetes, GitHub Actions (KHÔNG docker-compose)",
+  "pham_vi": "cấu hình hạ tầng sai",
+  "nguon_xac_suat_bat_loi": "bước 4a: cấu hình E5 chấm chặt 18/23 (58–90%)",
+  "thoi_gian": {
+   "mo_hinh": "hang|None",
+   "he_so": null,
+   "dat_T3": false,
+   "sai_so_trung_vi": 0.113,
+   "khoang_p10_p90_s": [
+    5.0,
+    14.2
+   ],
+   "cv_lap": 0.03,
+   "cach_dung_trong_bo_chon": "cận trên p90 (công thức chưa đạt T3)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 1.0,
+   "don_vi": "cảnh báo/tệp cấu hình",
+   "ty_le_dung_mau": 0.125,
+   "wilson95": [
+    0.035,
+    0.36
+   ],
+   "mau": 20,
+   "khong_ro": 4
+  }
+ },
+ "hadolint": {
+  "pha": "Deploy",
+  "dau_vao": "Dockerfile",
+  "pham_vi": "lỗi/thực hành Dockerfile (phần lớn không phải bảo mật)",
+  "nguon_xac_suat_bat_loi": "bước 4a: cấu hình E5 chấm chặt 1/5 Dockerfile (4–62%) – chủ yếu là luật thực hành tốt",
+  "thoi_gian": {
+   "mo_hinh": "tuyen|dockerfile",
+   "he_so": {
+    "a": 0.03,
+    "b": 0.006615460852329034,
+    "bien": "dockerfile"
+   },
+   "dat_T3": false,
+   "sai_so_trung_vi": 0.321,
+   "khoang_p10_p90_s": [
+    0.0,
+    0.1
+   ],
+   "cv_lap": 0.102,
+   "cach_dung_trong_bo_chon": "cận trên p90 (công thức chưa đạt T3)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 1.0,
+   "don_vi": "cảnh báo/Dockerfile",
+   "ty_le_dung_mau": 0.0,
+   "wilson95": [
+    0.0,
+    0.161
+   ],
+   "mau": 20,
+   "khong_ro": 0
+  }
+ },
+ "zap": {
+  "pha": "Test",
+  "dau_vao": "ứng dụng đang chạy ở môi trường thử nghiệm (URL); không đăng nhập nếu chưa cấu hình xác thực",
+  "pham_vi": "quét động: SQLi, chuyển hướng mở, lộ thư mục/thông tin, thiếu header bảo mật",
+  "nguon_xac_suat_bat_loi": "buoc4_kiem_chung/dast: Juice Shop 20.3.0, 3 lần – khớp route+CWE 4/19 lỗ hổng (CI 9–43%)",
+  "thoi_gian": {
+   "mo_hinh": "hang (3 lần đo: 3, 15, 6 phút)",
+   "he_so": null,
+   "dat_T3": false,
+   "sai_so_trung_vi": null,
+   "khoang_p10_p90_s": [
+    180,
+    900
+   ],
+   "cv_lap": 0.64,
+   "cach_dung_trong_bo_chon": "cận trên = 900 s (lần chậm nhất)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": null,
+   "don_vi": "cảnh báo/lần quét",
+   "ty_le_dung_mau": null,
+   "wilson95": null,
+   "mau": null,
+   "khong_ro": null
+  }
+ },
+ "kics": {
+  "pha": "Deploy",
+  "dau_vao": "Dockerfile, Terraform, CloudFormation, Kubernetes, docker-compose (GitHub Actions bắt 0/4)",
+  "pham_vi": "cấu hình hạ tầng sai (IaC: Dockerfile, Terraform, CloudFormation, K8s, docker-compose)",
+  "nguon_xac_suat_bat_loi": "bước 21 (E5 chấm chặt): bắt 18/23 (CI 58–90%: Dockerfile 4/5, Terraform 6/6, CloudFormation 3/3, K8s 5/5, GH Actions 0/4); tầng 2 Deploy: bắt 9/13 biến thể docker-compose (CI 42–87%), 0 báo nhầm trên cấu hình cứng hóa; tầng 2 Release_B: bắt 16/24 ca Dockerfile (8/12 lớp)",
+  "thoi_gian": {
+   "mo_hinh": "hang|None",
+   "he_so": null,
+   "dat_T3": false,
+   "sai_so_trung_vi": 0.145,
+   "khoang_p10_p90_s": [
+    1.2,
+    10.8
+   ],
+   "cv_lap": 0.048,
+   "cach_dung_trong_bo_chon": "cận trên p90 = 10.8 s (đo trên 48 lần chạy E5 + 28 lần chạy Release_B)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.5,
+   "don_vi": "cảnh báo/tệp cấu hình",
+   "ty_le_dung_mau": 0.562,
+   "wilson95": [
+    0.393,
+    0.718
+   ],
+   "mau": 32,
+   "khong_ro": 0,
+   "cau_hinh": "checkmarx/kics:latest scan --no-progress -p <dir> -o <out>"
+  }
+ },
+ "grype": {
+  "pha": "Build/Release",
+  "dau_vao": "lockfile/manifest có phiên bản (pha Build) hoặc container image đã đóng gói (pha Release khi có Dockerfile)",
+  "pham_vi": "lỗ hổng CVE đã biết trong gói phụ thuộc ứng dụng (SCA) và gói hệ điều hành + ứng dụng trong container image",
+  "nguon_xac_suat_bat_loi": "tầng 2 Build: bắt 472/473 CVE trên 91 dự án npm (CI 98,8–100%), 0/10 dự án sạch báo nhầm; tầng 2 Release_A: bắt 43/43 CVE trên 13 Node container image (CI 91,8–100%), quét được 91 gói OS Debian/image",
+  "thoi_gian": {
+   "mo_hinh": "tuyen|so_goi_syft",
+   "he_so": {
+    "a": 1.85,
+    "b": 0.011,
+    "bien": "so_goi_syft",
+    "phu_phi_image_s": 9.0
+   },
+   "dat_T3": true,
+   "sai_so_trung_vi": 0.118,
+   "khoang_p10_p90_s": [
+    2.1,
+    12.6
+   ],
+   "cv_lap": 0.039,
+   "cach_dung_trong_bo_chon": "công thức: 1.85 + 0.011×số_gói (+ 9.0s nếu quét cả container image ở pha Release)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.08,
+   "don_vi": "cảnh báo/gói",
+   "ty_le_dung_mau": 1.0,
+   "wilson95": [
+    0.918,
+    1.0
+   ],
+   "mau": 43,
+   "khong_ro": 0,
+   "cau_hinh": "anchore/grype:v0.120.0 dir:<path> -o json (pha Build) và grype <image> -o json (pha Release)"
+  }
+ },
+ "dockle": {
+  "pha": "Release",
+  "dau_vao": "container image đã build (khi dự án có Dockerfile)",
+  "pham_vi": "kiểm tra CIS benchmark cho container image + phát hiện tệp nhạy cảm (.env, khóa SSH) và bí mật nằm trong các tầng (layers) của image",
+  "nguon_xac_suat_bat_loi": "tầng 2 Release_B (28 image: 24 ca lỗi thuộc 12 lớp + 4 image sạch): bắt 12/24 ca (6/12 lớp, CI 31,4–68,6%); bắt độc quyền 2 lớp nguy hiểm trong tầng image đã đóng gói (env_file CWE-538, ssh_key CWE-321) mà các công cụ quét Dockerfile tĩnh đều bỏ sót (0/2)",
+  "thoi_gian": {
+   "mo_hinh": "hang|None",
+   "he_so": null,
+   "dat_T3": false,
+   "sai_so_trung_vi": 0.162,
+   "khoang_p10_p90_s": [
+    6.0,
+    13.5
+   ],
+   "cv_lap": 0.065,
+   "cach_dung_trong_bo_chon": "cận trên p90 = 13.5 s (đo trên 28 container image ở tầng 2 Release_B)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 2.5,
+   "don_vi": "cảnh báo/Dockerfile",
+   "ty_le_dung_mau": 0.545,
+   "wilson95": [
+    0.347,
+    0.731
+   ],
+   "mau": 22,
+   "khong_ro": 0,
+   "cau_hinh": "goodwithtech/dockle:v0.4.15 -f json <image_tag>"
+  }
+ },
+ "docker_bench": {
+  "pha": "Operate",
+  "dau_vao": "container đang chạy hoặc cấu hình triển khai container (docker-compose / container runtime)",
+  "pham_vi": "kiểm toán cấu hình bảo mật container lúc vận hành theo CIS Docker Benchmark (quyền đặc quyền, namespace, giới hạn tài nguyên RAM/CPU, hệ tệp gốc chỉ đọc, capability, socket)",
+  "nguon_xac_suat_bat_loi": "tầng 2 Deploy/Operate (14 container đang chạy: 1 base cứng hóa + 13 biến thể lỗi): bắt 10/13 biến thể (76,9%, CI 49,7–91,8%); bắt độc quyền 2 lỗi cấu hình vận hành (no_mem_limit CWE-770, rw_rootfs CWE-732) mà công cụ quét tĩnh KICS bỏ sót; hợp KICS + Docker Bench đạt 11/13",
+  "thoi_gian": {
+   "mo_hinh": "hang|None",
+   "he_so": null,
+   "dat_T3": false,
+   "sai_so_trung_vi": 0.08,
+   "khoang_p10_p90_s": [
+    22.6,
+    42.6
+   ],
+   "cv_lap": 0.05,
+   "cach_dung_trong_bo_chon": "cận trên = 42.6 s (gồm ~20s khởi tạo container kiểm thử + 22.6s chạy CIS Docker Benchmark)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 3.0,
+   "don_vi": "cảnh báo/tệp cấu hình",
+   "ty_le_dung_mau": 0.769,
+   "wilson95": [
+    0.497,
+    0.918
+   ],
+   "mau": 13,
+   "khong_ro": 0,
+   "cau_hinh": "docker/docker-bench-security (chạy kiểm tra mục 4 - Container Images and Build File & mục 5 - Container Runtime)"
+  }
+ },
+ "nuclei": {
+  "pha": "Test",
+  "dau_vao": "ứng dụng đang chạy ở môi trường thử nghiệm (URL staging/test)",
+  "pham_vi": "quét động dựa trên mẫu (template-based DAST): XSS, LFI/Path Traversal, Open Redirect, OS Command Injection, lộ tệp nhạy cảm (.env, config)",
+  "nguon_xac_suat_bat_loi": "bước 21 + tầng 2 DAST (gr2-vulnapp, 10 lớp lỗ hổng + 9 route an toàn, đo lặp 3 lần): kết hợp chế độ -dast và -tags exposure,dotenv,files bắt 5/10 lớp (xss, path, redirect, cmd, exposed_file; CI 23,7–76,3%), 0/9 báo nhầm trên route an toàn cả 3 lần chạy; bắt được lộ tệp /.env (exposed_file) mà ZAP full scan bỏ sót (hợp ZAP + Nuclei đạt 10/10)",
+  "thoi_gian": {
+   "mo_hinh": "hang (3 lần đo bước 21: 64.0s, 61.0s, 63.1s)",
+   "he_so": null,
+   "dat_T3": false,
+   "sai_so_trung_vi": 0.021,
+   "khoang_p10_p90_s": [
+    60.1,
+    64.4
+   ],
+   "cv_lap": 0.025,
+   "cach_dung_trong_bo_chon": "cận trên p90 = 64.4 s (tổng 2 lượt quét: -dast trung vị 32.7s + exposures trung vị 31.0s)"
+  },
+  "canh_bao": {
+   "khoi_luong_trung_vi": 0.0,
+   "don_vi": "cảnh báo/lần quét",
+   "ty_le_dung_mau": 1.0,
+   "wilson95": [
+    0.566,
+    1.0
+   ],
+   "mau": 5,
+   "khong_ro": 0,
+   "cau_hinh": "projectdiscovery/nuclei:latest -u <url> -dast -jsonl (kèm danh sách endpoint) + nuclei -u <url> -tags exposure,dotenv,files -jsonl"
+  }
+ }
+}

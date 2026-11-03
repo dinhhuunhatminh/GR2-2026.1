@@ -1,0 +1,33 @@
+import json, re, sys
+from playwright.sync_api import sync_playwright
+P='/mnt/user-data/uploads/GR2/Dataset/buoc35_bao_cao_va_xep_hang_v3/ket_qua/bao_cao_juiceshop.html'
+R=json.load(open('/mnt/user-data/uploads/GR2/Dataset/buoc34_nhanh2_tinh_va_vi_mo/kiem_thu_lop2_nhanh2/ra/v3_JuiceShop_N02.json',encoding='utf-8'))
+H=open(P,encoding='utf-8').read()
+exp_login=len(re.findall(r'<tr data-tool="[^"]*" data-pha="[^"]*" data-tier="[^"]*" data-m="[^"]*" data-t="[^"]*login[^"]*"',H))
+exp_zap=sum(1 for f in R['phat_hien'] if f['tool']=='zap')
+res=[]; errs=[]
+with sync_playwright() as p:
+    b=p.chromium.launch(); pg=b.new_page(viewport={'width':1366,'height':768})
+    pg.on('console',lambda m: errs.append(('console.'+m.type,m.text)) if m.type in('error','warning') else None)
+    pg.on('pageerror',lambda e: errs.append(('pageerror',str(e))))
+    reqs=[]; pg.on('request',lambda r: reqs.append(r.url))
+    pg.goto('file://'+P); pg.wait_for_load_state('load')
+    res.append(('H5a không có lỗi/cảnh báo console, không pageerror', not errs, errs[:3]))
+    res.append(('H5b mạng: chỉ tải đúng tệp cục bộ', all(u.startswith('file://') for u in reqs), reqs[:3]))
+    res.append(('H5c có đúng 5 thẻ truy vết hiển thị', pg.locator('article.card').count()==5 and all(pg.locator('article.card').nth(i).is_visible() for i in range(5)), pg.locator('article.card').count()))
+    vis=lambda: pg.evaluate("[...document.querySelectorAll('#tb tbody tr')].filter(r=>r.style.display!=='none').length")
+    res.append(('H5d ban đầu hiện 213 dòng', vis()==213, vis()))
+    pg.fill('#q','login'); n=vis()
+    allhave=pg.evaluate("[...document.querySelectorAll('#tb tbody tr')].filter(r=>r.style.display!=='none').every(r=>r.getAttribute('data-t').includes('login'))")
+    res.append(('H5e gõ "login": số dòng = số dòng có chữ login và mọi dòng hiện đều có', n==exp_login and n>0 and allhave, (n,exp_login)))
+    pg.fill('#q',''); pg.select_option('#fTool','zap'); nz=vis()
+    res.append(('H5f lọc công cụ zap: đúng 65 dòng', nz==exp_zap==65, (nz,exp_zap)))
+    pg.select_option('#fTool',''); pg.click('#tb th:nth-child(5)'); pg.click('#tb th:nth-child(6)')
+    res.append(('H5g bấm sắp xếp cột không lỗi, vẫn 213 dòng', not [e for e in errs if e[0]=='pageerror'] and vis()==213, vis()))
+    ov=pg.evaluate("document.documentElement.scrollWidth")
+    res.append(('S1 (mềm) không cuộn ngang ở 1366 px', ov<=1366, ov))
+    pg.screenshot(path='top.png',full_page=False)
+    pg.locator('article.card').first.scroll_into_view_if_needed(); pg.evaluate("document.querySelector('article.card').scrollIntoView()"); pg.screenshot(path='card.png')
+    b.close()
+for t,ok,g in res: print(('PASS ' if ok else 'FAIL ')+t+' | '+str(g)[:200])
+json.dump([{'ten':t,'ok':bool(ok),'ghi':str(g)[:300]} for t,ok,g in res],open('h5.json','w'),ensure_ascii=False,indent=1)

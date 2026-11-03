@@ -1,0 +1,3 @@
+mcp>=1.29,<2
+numpy
+tree-sitter-language-pack

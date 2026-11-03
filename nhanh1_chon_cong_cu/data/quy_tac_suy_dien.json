@@ -1,0 +1,375 @@
+{
+ "_ghi_chu": "Claude soạn 13/10/2026 – CẦN BẠN DUYỆT. Mỗi dòng có nguồn là trang chính thức. Khớp không phân biệt hoa thường, theo tên/bí danh. | v2 13/10 sau kiểm S6 (Dataset/buoc7_suy_dien/KIEM_S6.md): sửa gợi ý lockfile (go.sum; build.gradle; pyproject.toml, uv.lock; *.csproj), bỏ bí danh \"spring\" và \".net\", cập nhật 3 nguồn đã chuyển. Bản trước: quy_tac_suy_dien_v1.json. Các tên MƠ HỒ (oauth/oauth2, tài khoản google, passport, jwt, jose, sanctum, got, requests, webhook, blade) GIỮ, chờ bạn duyệt.",
+ "R1_framework": {
+  "express": {
+   "bi_danh": [
+    "express",
+    "expressjs",
+    "express.js",
+    "node express"
+   ],
+   "ngon_ngu": [
+    "javascript",
+    "typescript"
+   ],
+   "lockfile_thuong_gap": [
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://expressjs.com/"
+  },
+  "nestjs": {
+   "bi_danh": [
+    "nestjs",
+    "nest.js",
+    "nest"
+   ],
+   "ngon_ngu": [
+    "typescript",
+    "javascript"
+   ],
+   "lockfile_thuong_gap": [
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://docs.nestjs.com/ (hỗ trợ TypeScript, vẫn viết được JavaScript thuần)"
+  },
+  "nextjs": {
+   "bi_danh": [
+    "next.js",
+    "nextjs",
+    "next"
+   ],
+   "ngon_ngu": [
+    "javascript",
+    "typescript"
+   ],
+   "lockfile_thuong_gap": [
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://nextjs.org/docs"
+  },
+  "django": {
+   "bi_danh": [
+    "django"
+   ],
+   "ngon_ngu": [
+    "python"
+   ],
+   "lockfile_thuong_gap": [
+    "requirements.txt",
+    "poetry.lock",
+    "Pipfile.lock",
+    "pyproject.toml",
+    "uv.lock"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://docs.djangoproject.com/"
+  },
+  "flask": {
+   "bi_danh": [
+    "flask"
+   ],
+   "ngon_ngu": [
+    "python"
+   ],
+   "lockfile_thuong_gap": [
+    "requirements.txt",
+    "poetry.lock",
+    "Pipfile.lock",
+    "pyproject.toml",
+    "uv.lock"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://flask.palletsprojects.com/"
+  },
+  "fastapi": {
+   "bi_danh": [
+    "fastapi"
+   ],
+   "ngon_ngu": [
+    "python"
+   ],
+   "lockfile_thuong_gap": [
+    "requirements.txt",
+    "poetry.lock",
+    "Pipfile.lock",
+    "pyproject.toml",
+    "uv.lock"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://fastapi.tiangolo.com/"
+  },
+  "spring_boot": {
+   "bi_danh": [
+    "spring boot",
+    "springboot"
+   ],
+   "ngon_ngu": [
+    "java"
+   ],
+   "lockfile_thuong_gap": [
+    "pom.xml",
+    "build.gradle",
+    "gradle.lockfile"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://spring.io/projects/spring-boot (Java; cũng hỗ trợ Kotlin – không có trong danh mục)"
+  },
+  "gin": {
+   "bi_danh": [
+    "gin",
+    "gin-gonic"
+   ],
+   "ngon_ngu": [
+    "go"
+   ],
+   "lockfile_thuong_gap": [
+    "go.mod",
+    "go.sum"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://gin-gonic.com/"
+  },
+  "echo": {
+   "bi_danh": [
+    "echo",
+    "labstack echo"
+   ],
+   "ngon_ngu": [
+    "go"
+   ],
+   "lockfile_thuong_gap": [
+    "go.mod",
+    "go.sum"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://echo.labstack.com/"
+  },
+  "laravel": {
+   "bi_danh": [
+    "laravel"
+   ],
+   "ngon_ngu": [
+    "php"
+   ],
+   "lockfile_thuong_gap": [
+    "composer.lock"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://laravel.com/docs"
+  },
+  "symfony": {
+   "bi_danh": [
+    "symfony"
+   ],
+   "ngon_ngu": [
+    "php"
+   ],
+   "lockfile_thuong_gap": [
+    "composer.lock"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://symfony.com/doc"
+  },
+  "react": {
+   "bi_danh": [
+    "react",
+    "reactjs"
+   ],
+   "ngon_ngu": [
+    "javascript",
+    "typescript"
+   ],
+   "lockfile_thuong_gap": [
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://react.dev/ (thư viện giao diện)"
+  },
+  "nodejs": {
+   "bi_danh": [
+    "node.js",
+    "nodejs",
+    "node"
+   ],
+   "ngon_ngu": [
+    "javascript",
+    "typescript"
+   ],
+   "lockfile_thuong_gap": [
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://nodejs.org/ (môi trường chạy JS phía máy chủ, không phải framework; thêm 13/10 sau S2 lần 1)"
+  },
+  "aspnet": {
+   "bi_danh": [
+    "asp.net",
+    "aspnet",
+    "asp.net core"
+   ],
+   "ngon_ngu": [
+    "csharp"
+   ],
+   "lockfile_thuong_gap": [
+    "packages.lock.json",
+    "*.csproj"
+   ],
+   "loai": "ung_dung",
+   "nguon": "https://dotnet.microsoft.com/apps/aspnet (C# – ngôn ngữ NGOÀI danh mục)"
+  }
+ },
+ "R2_cong_nghe": {
+  "dang_nhap": {
+   "ten": [
+    "passport",
+    "next-auth",
+    "auth0",
+    "keycloak",
+    "oauth",
+    "oauth2",
+    "openid connect",
+    "google login",
+    "đăng nhập google",
+    "tài khoản google",
+    "sso",
+    "flask-login",
+    "django-allauth",
+    "spring security"
+   ],
+   "nguon": "passportjs.org; next-auth.js.org; auth0.com; keycloak.org; oauth.net/2; openid.net/connect; flask-login.readthedocs.io; docs.allauth.org; spring.io/projects/spring-security – đều là thư viện/dịch vụ xác thực người dùng (next-auth.js.org nay thông báo đã nhập vào Better Auth)"
+  },
+  "phien_token": {
+   "ten": [
+    "jsonwebtoken",
+    "jwt",
+    "pyjwt",
+    "jose",
+    "express-session",
+    "cookie-session",
+    "flask-jwt-extended",
+    "laravel sanctum",
+    "sanctum"
+   ],
+   "nguon": "npmjs.com/package/jsonwebtoken; jwt.io; pyjwt.readthedocs.io; npmjs.com/package/express-session; laravel.com/docs/sanctum – token/phiên đăng nhập"
+  },
+  "upload": {
+   "ten": [
+    "multer",
+    "formidable",
+    "busboy",
+    "express-fileupload"
+   ],
+   "nguon": "npmjs.com/package/multer, /formidable, /busboy, /express-fileupload – xử lý tải tệp lên (multipart/form-data)"
+  },
+  "csdl": {
+   "ten": [
+    "postgres",
+    "postgresql",
+    "mysql",
+    "mariadb",
+    "sqlite",
+    "sql server",
+    "mongodb",
+    "mongoose",
+    "sequelize",
+    "typeorm",
+    "prisma",
+    "knex",
+    "sqlalchemy",
+    "psycopg2",
+    "pymysql",
+    "hibernate",
+    "spring data jpa",
+    "jpa",
+    "gorm",
+    "eloquent"
+   ],
+   "nguon": "postgresql.org; mysql.com; mariadb.org; sqlite.org; mongodb.com; mongoosejs.com; sequelize.org; typeorm.io; prisma.io; knexjs.org; sqlalchemy.org; psycopg.org; hibernate.org; gorm.io; laravel.com/docs/eloquent – cơ sở dữ liệu hoặc thư viện truy vấn CSDL"
+  },
+  "url_ngoai": {
+   "ten": [
+    "axios",
+    "node-fetch",
+    "got",
+    "requests",
+    "httpx",
+    "webhook",
+    "okhttp",
+    "resttemplate"
+   ],
+   "nguon": "axios-http.com; npmjs.com/package/node-fetch; requests.readthedocs.io; python-httpx.org; square.github.io/okhttp – gửi yêu cầu HTTP ra ngoài (webhook = máy chủ gửi HTTP tới URL do người dùng cấu hình)"
+  },
+  "thanh_toan": {
+   "ten": [
+    "stripe",
+    "paypal",
+    "braintree",
+    "momo",
+    "vnpay",
+    "zalopay"
+   ],
+   "nguon": "stripe.com/docs; developer.paypal.com; paypal.com/us/braintree; developers.momo.vn; vnpay.vn; docs.zalopay.vn – cổng thanh toán"
+  },
+  "html": {
+   "ten": [
+    "ejs",
+    "pug",
+    "handlebars",
+    "jinja2",
+    "jinja",
+    "thymeleaf",
+    "blade"
+   ],
+   "nguon": "ejs.co; pugjs.org; handlebarsjs.com; jinja.palletsprojects.com; thymeleaf.org; laravel.com/docs/blade – sinh HTML từ mẫu"
+  },
+  "phan_quyen": {
+   "ten": [
+    "casl",
+    "accesscontrol",
+    "casbin",
+    "django-guardian"
+   ],
+   "nguon": "casl.js.org; npmjs.com/package/accesscontrol; casbin.apache.org; django-guardian.readthedocs.io – phân quyền"
+  },
+  "du_lieu": {
+   "ten": [
+    "js-yaml",
+    "xml2js",
+    "lxml",
+    "pickle",
+    "jackson",
+    "pyyaml"
+   ],
+   "nguon": "npmjs.com/package/js-yaml, /xml2js; lxml.de; docs.python.org/3/library/pickle.html; github.com/FasterXML/jackson; pyyaml.org – phân tích/giải tuần tự hóa dữ liệu"
+  },
+  "tep": {
+   "ten": [
+    "fs-extra",
+    "archiver",
+    "adm-zip",
+    "sharp",
+    "pillow"
+   ],
+   "nguon": "npmjs.com/package/fs-extra, /archiver, /adm-zip; sharp.pixelplumbing.com; python-pillow.org – đọc/ghi/xử lý tệp"
+  }
+ },
+ "R3_loai_du_an": {
+  "ung_dung": "framework web/giao diện trong R1, hoặc khách mô tả trang web/app/API phục vụ người dùng",
+  "thu_vien": "khách nói rõ là thư viện/package/SDK/module để người khác dùng",
+  "khong_ro": "còn lại",
+  "nguon": "quy ước của đề tài (Claude đề xuất)"
+ }
+}

@@ -1,0 +1,7365 @@
+{
+ "phien_ban": "hcl_b33b_A1_b33b",
+ "nhan": "y_ham (dot 2, 926 ca, 1997 cap)",
+ "kappa": 10,
+ "che_do_mu": "A0",
+ "cau_hinh_hmlc": {
+  "temp": 0.07,
+  "base_temp": 0.07,
+  "dropout": 0.1,
+  "hidden": [
+   256,
+   128
+  ],
+  "dim": 128,
+  "epochs": 100,
+  "batch": 512,
+  "lr": 0.001,
+  "wd": 0.0001,
+  "seed": 0
+ },
+ "loss_dau_cuoi": [
+  7.343304634094238,
+  4.458849143981934
+ ],
+ "p": {
+  "javascript": {
+   "semgrep": {
+    "access_control": 0.002595,
+    "bo_nho": 0.039235,
+    "cmd": 0.165187,
+    "cors": 0.007879,
+    "csrf": 0.023385,
+    "deserialization": 0.02938,
+    "eval": 0.073205,
+    "info_exposure": 0.008143,
+    "insecure_random": 0.024898,
+    "jwt_secret": 0.004896,
+    "khac": 0.011689,
+    "ma_doc": 0.03264,
+    "open_redirect": 0.019308,
+    "path": 0.262738,
+    "prototype": 0.092229,
+    "regex": 0.082218,
+    "sqli": 0.030977,
+    "ssrf": 0.006047,
+    "validation": 0.087694,
+    "weak_hash": 0.020516,
+    "xac_thuc": 0.00559,
+    "xss": 0.149755,
+    "xxe": 0.035671
+   },
+   "codeql": {
+    "access_control": 0.000692,
+    "bo_nho": 0.038851,
+    "cmd": 0.092038,
+    "cors": 0.008028,
+    "csrf": 0.006924,
+    "deserialization": 0.031967,
+    "eval": 0.020279,
+    "info_exposure": 0.068401,
+    "insecure_random": 0.029498,
+    "jwt_secret": 0.005855,
+    "khac": 0.035317,
+    "ma_doc": 0.027672,
+    "open_redirect": 0.018112,
+    "path": 0.036527,
+    "prototype": 0.153296,
+    "regex": 0.104493,
+    "sqli": 0.11642,
+    "ssrf": 0.017486,
+    "validation": 0.019537,
+    "weak_hash": 0.02014,
+    "xac_thuc": 0.008261,
+    "xss": 0.080225,
+    "xxe": 0.0354
+   },
+   "njsscan": {
+    "access_control": 0.000231,
+    "bo_nho": 0.005181,
+    "cmd": 0.004998,
+    "cors": 0.001394,
+    "csrf": 0.001616,
+    "deserialization": 0.006467,
+    "eval": 0.003396,
+    "info_exposure": 0.001129,
+    "insecure_random": 0.011346,
+    "jwt_secret": 0.001735,
+    "khac": 0.011612,
+    "ma_doc": 0.005996,
+    "open_redirect": 0.007524,
+    "path": 0.021209,
+    "prototype": 0.000772,
+    "regex": 0.017636,
+    "sqli": 0.002526,
+    "ssrf": 0.001479,
+    "validation": 0.003878,
+    "weak_hash": 0.008428,
+    "xac_thuc": 0.001542,
+    "xss": 0.002712,
+    "xxe": 0.004728
+   },
+   "eslint_security": {
+    "access_control": 0.003134,
+    "bo_nho": 0.072289,
+    "cmd": 0.155798,
+    "cors": 0.016853,
+    "csrf": 0.011881,
+    "deserialization": 0.051074,
+    "eval": 0.072907,
+    "info_exposure": 0.013682,
+    "insecure_random": 0.047016,
+    "jwt_secret": 0.010533,
+    "khac": 0.04371,
+    "ma_doc": 0.055017,
+    "open_redirect": 0.012636,
+    "path": 0.22299,
+    "prototype": 0.071738,
+    "regex": 0.254475,
+    "sqli": 0.021721,
+    "ssrf": 0.009127,
+    "validation": 0.017585,
+    "weak_hash": 0.035543,
+    "xac_thuc": 0.011357,
+    "xss": 0.00392,
+    "xxe": 0.065739
+   },
+   "eslint_mo_rong": {
+    "access_control": 0.001131,
+    "bo_nho": 0.024096,
+    "cmd": 0.004884,
+    "cors": 0.012513,
+    "csrf": 0.004795,
+    "deserialization": 0.017352,
+    "eval": 0.007161,
+    "info_exposure": 0.001214,
+    "insecure_random": 0.01917,
+    "jwt_secret": 0.010219,
+    "khac": 0.000653,
+    "ma_doc": 0.019738,
+    "open_redirect": 0.008859,
+    "path": 0.006757,
+    "prototype": 0.00061,
+    "regex": 0.318138,
+    "sqli": 0.006341,
+    "ssrf": 0.002753,
+    "validation": 0.013952,
+    "weak_hash": 0.018415,
+    "xac_thuc": 0.003948,
+    "xss": 0.059968,
+    "xxe": 0.021907
+   }
+  },
+  "python": {
+   "semgrep": {
+    "access_control": 0.037132,
+    "bo_nho": 0.033052,
+    "cmd": 0.430207,
+    "cors": 0.025559,
+    "csrf": 0.012123,
+    "deserialization": 0.49608,
+    "eval": 0.292602,
+    "info_exposure": 0.002279,
+    "insecure_random": 0.031,
+    "jwt_secret": 0.005517,
+    "khac": 0.000963,
+    "ma_doc": 0.039235,
+    "open_redirect": 0.154602,
+    "path": 0.032967,
+    "prototype": 0.040099,
+    "regex": 0.054517,
+    "sqli": 0.190941,
+    "ssrf": 0.005467,
+    "validation": 0.028039,
+    "weak_hash": 0.119524,
+    "xac_thuc": 0.006594,
+    "xss": 0.042175,
+    "xxe": 0.246056
+   },
+   "codeql": {
+    "access_control": 0.001441,
+    "bo_nho": 0.032761,
+    "cmd": 0.044472,
+    "cors": 0.027413,
+    "csrf": 0.013208,
+    "deserialization": 0.020868,
+    "eval": 0.009048,
+    "info_exposure": 0.004148,
+    "insecure_random": 0.030485,
+    "jwt_secret": 0.005821,
+    "khac": 0.02146,
+    "ma_doc": 0.038851,
+    "open_redirect": 0.193149,
+    "path": 0.241766,
+    "prototype": 0.03436,
+    "regex": 0.078599,
+    "sqli": 0.023993,
+    "ssrf": 0.047721,
+    "validation": 0.017554,
+    "weak_hash": 0.035186,
+    "xac_thuc": 0.007768,
+    "xss": 0.074975,
+    "xxe": 0.04768
+   },
+   "bandit": {
+    "access_control": 0.04226,
+    "bo_nho": 0.077441,
+    "cmd": 0.512915,
+    "cors": 0.052041,
+    "csrf": 0.024728,
+    "deserialization": 0.350782,
+    "eval": 0.070291,
+    "info_exposure": 0.005421,
+    "insecure_random": 0.271657,
+    "jwt_secret": 0.084932,
+    "khac": 0.021782,
+    "ma_doc": 0.08,
+    "open_redirect": 0.01892,
+    "path": 0.09502,
+    "prototype": 0.067351,
+    "regex": 0.008133,
+    "sqli": 0.28937,
+    "ssrf": 0.009342,
+    "validation": 0.101035,
+    "weak_hash": 0.16957,
+    "xac_thuc": 0.088872,
+    "xss": 0.02445,
+    "xxe": 0.03587
+   }
+  },
+  "java": {
+   "semgrep": {
+    "access_control": 0.000691,
+    "bo_nho": 0.017755,
+    "cmd": 0.012403,
+    "cors": 0.025184,
+    "csrf": 0.002364,
+    "deserialization": 0.186693,
+    "eval": 0.011402,
+    "info_exposure": 0.00142,
+    "insecure_random": 0.021492,
+    "jwt_secret": 0.012913,
+    "khac": 0.014292,
+    "ma_doc": 0.039235,
+    "open_redirect": 0.043954,
+    "path": 0.004146,
+    "prototype": 0.036297,
+    "regex": 0.013421,
+    "sqli": 0.09068,
+    "ssrf": 0.011252,
+    "validation": 0.012854,
+    "weak_hash": 0.022744,
+    "xac_thuc": 0.01301,
+    "xss": 0.001876,
+    "xxe": 0.291324
+   },
+   "codeql": {
+    "access_control": 0.000812,
+    "bo_nho": 0.017781,
+    "cmd": 0.015764,
+    "cors": 0.02494,
+    "csrf": 0.002393,
+    "deserialization": 0.096924,
+    "eval": 0.010416,
+    "info_exposure": 0.011461,
+    "insecure_random": 0.027975,
+    "jwt_secret": 0.014082,
+    "khac": 0.028666,
+    "ma_doc": 0.038851,
+    "open_redirect": 0.017926,
+    "path": 0.221178,
+    "prototype": 0.035557,
+    "regex": 0.019711,
+    "sqli": 0.010817,
+    "ssrf": 0.012013,
+    "validation": 0.004643,
+    "weak_hash": 0.023812,
+    "xac_thuc": 0.012868,
+    "xss": 0.002058,
+    "xxe": 0.003471
+   }
+  },
+  "go": {
+   "semgrep": {
+    "access_control": 0.000629,
+    "bo_nho": 0.027624,
+    "cmd": 0.005407,
+    "cors": 0.014909,
+    "csrf": 0.012577,
+    "deserialization": 0.027484,
+    "eval": 0.157652,
+    "info_exposure": 0.002133,
+    "insecure_random": 0.29198,
+    "jwt_secret": 0.004611,
+    "khac": 0.000107,
+    "ma_doc": 0.039235,
+    "open_redirect": 0.10136,
+    "path": 0.003184,
+    "prototype": 0.039235,
+    "regex": 0.001471,
+    "sqli": 0.048092,
+    "ssrf": 0.095639,
+    "validation": 0.003732,
+    "weak_hash": 0.059666,
+    "xac_thuc": 0.005222,
+    "xss": 0.067988,
+    "xxe": 0.039235
+   }
+  },
+  "php": {
+   "semgrep": {
+    "access_control": 0.000921,
+    "bo_nho": 0.039235,
+    "cmd": 0.155297,
+    "cors": 0.030035,
+    "csrf": 0.004021,
+    "deserialization": 0.259563,
+    "eval": 0.026927,
+    "info_exposure": 0.002559,
+    "insecure_random": 0.014628,
+    "jwt_secret": 0.015351,
+    "khac": 0.000245,
+    "ma_doc": 0.039235,
+    "open_redirect": 0.012811,
+    "path": 0.032172,
+    "prototype": 0.035669,
+    "regex": 0.006177,
+    "sqli": 0.106224,
+    "ssrf": 0.223239,
+    "validation": 0.014228,
+    "weak_hash": 0.229864,
+    "xac_thuc": 0.006653,
+    "xss": 0.058053,
+    "xxe": 0.012018
+   }
+  }
+ },
+ "prior": {
+  "javascript": {
+   "csrf": 0.011826953003423592,
+   "regex": 0.09990662931839403,
+   "khac": 0.20728291316526612,
+   "xss": 0.14596949891067537,
+   "validation": 0.03672580143168378,
+   "access_control": 0.08714596949891068,
+   "info_exposure": 0.05633364456893869,
+   "xac_thuc": 0.014005602240896359,
+   "path": 0.06442577030812324,
+   "sqli": 0.01027077497665733,
+   "insecure_random": 0.0040460628695922814,
+   "prototype": 0.08590102707749767,
+   "cmd": 0.06318082788671024,
+   "ssrf": 0.03392468098350451,
+   "open_redirect": 0.01556178026766262,
+   "jwt_secret": 0.017117958294428883,
+   "eval": 0.032679738562091505,
+   "xxe": 0.0003112356053532524,
+   "cors": 0.008092125739184563,
+   "weak_hash": 0.0028011204481792717,
+   "ma_doc": 0.0009337068160597573,
+   "deserialization": 0.001556178026766262
+  },
+  "python": {
+   "validation": 0.04475421863536317,
+   "khac": 0.26705796038151136,
+   "open_redirect": 0.02127659574468085,
+   "xac_thuc": 0.025678650036683785,
+   "path": 0.08070432868672046,
+   "jwt_secret": 0.022743947175348497,
+   "access_control": 0.09611151870873075,
+   "xxe": 0.011005135730007337,
+   "cmd": 0.04402054292002935,
+   "regex": 0.07703595011005136,
+   "eval": 0.04181951577402788,
+   "deserialization": 0.03008070432868672,
+   "info_exposure": 0.07336757153338225,
+   "xss": 0.08950843727072634,
+   "sqli": 0.018341892883345562,
+   "weak_hash": 0.00293470286133529,
+   "ssrf": 0.03008070432868672,
+   "csrf": 0.012472487160674981,
+   "insecure_random": 0.00586940572267058,
+   "prototype": 0.001467351430667645,
+   "cors": 0.00293470286133529,
+   "bo_nho": 0.0007336757153338225
+  },
+  "java": {
+   "bo_nho": 0.0062724014336917565,
+   "regex": 0.04032258064516129,
+   "info_exposure": 0.0985663082437276,
+   "khac": 0.2168458781362007,
+   "access_control": 0.12634408602150538,
+   "xxe": 0.07974910394265233,
+   "xss": 0.0913978494623656,
+   "ssrf": 0.015232974910394265,
+   "path": 0.06810035842293907,
+   "eval": 0.017025089605734768,
+   "jwt_secret": 0.010752688172043012,
+   "cmd": 0.02060931899641577,
+   "sqli": 0.017025089605734768,
+   "cors": 0.002688172043010753,
+   "xac_thuc": 0.016129032258064516,
+   "deserialization": 0.033154121863799284,
+   "csrf": 0.06630824372759857,
+   "open_redirect": 0.011648745519713262,
+   "validation": 0.051075268817204304,
+   "insecure_random": 0.005376344086021506,
+   "prototype": 0.0008960573476702509,
+   "weak_hash": 0.004480286738351254
+  },
+  "go": {
+   "khac": 0.3173948887056884,
+   "xac_thuc": 0.036273701566364384,
+   "xss": 0.038746908491343775,
+   "access_control": 0.1574608408903545,
+   "info_exposure": 0.07666941467436109,
+   "regex": 0.0898598516075845,
+   "jwt_secret": 0.03297609233305853,
+   "cmd": 0.0403957131079967,
+   "path": 0.0585325638911789,
+   "validation": 0.04699093157460841,
+   "weak_hash": 0.00494641384995878,
+   "open_redirect": 0.015663643858202802,
+   "eval": 0.00741962077493817,
+   "deserialization": 0.00247320692497939,
+   "insecure_random": 0.00741962077493817,
+   "ssrf": 0.023083264633140973,
+   "sqli": 0.020610057708161583,
+   "cors": 0.00741962077493817,
+   "csrf": 0.013190436933223413,
+   "bo_nho": 0.00247320692497939
+  },
+  "php": {
+   "access_control": 0.084,
+   "xss": 0.284,
+   "insecure_random": 0.0088,
+   "csrf": 0.0392,
+   "info_exposure": 0.0536,
+   "cmd": 0.0456,
+   "path": 0.044,
+   "khac": 0.1912,
+   "regex": 0.024,
+   "cors": 0.0016,
+   "deserialization": 0.0248,
+   "sqli": 0.056,
+   "xxe": 0.0112,
+   "jwt_secret": 0.008,
+   "ssrf": 0.0176,
+   "eval": 0.028,
+   "xac_thuc": 0.0216,
+   "validation": 0.0408,
+   "open_redirect": 0.0128,
+   "weak_hash": 0.0024,
+   "prototype": 0.0008
+  }
+ },
+ "thong_tin_o": {
+  "javascript|semgrep|access_control": {
+   "m": 21,
+   "k": 0,
+   "mu": 0.008045,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.006931,
+   "n_ca_o": 280
+  },
+  "javascript|codeql|access_control": {
+   "m": 21,
+   "k": 0,
+   "mu": 0.002144,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.000833,
+   "n_ca_o": 280
+  },
+  "javascript|njsscan|access_control": {
+   "m": 21,
+   "k": 0,
+   "mu": 0.000716,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.000557,
+   "n_ca_o": 280
+  },
+  "javascript|eslint_security|access_control": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.003134,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.000664,
+   "n_ca_o": 280
+  },
+  "javascript|eslint_mo_rong|access_control": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.001131,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.00031,
+   "n_ca_o": 280
+  },
+  "javascript|semgrep|bo_nho": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.039235,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.004636,
+   "n_ca_o": 0
+  },
+  "javascript|codeql|bo_nho": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.038851,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.001699,
+   "n_ca_o": 0
+  },
+  "javascript|njsscan|bo_nho": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.005181,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.005639,
+   "n_ca_o": 0
+  },
+  "javascript|eslint_security|bo_nho": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.072289,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.009801,
+   "n_ca_o": 0
+  },
+  "javascript|eslint_mo_rong|bo_nho": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.024096,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.033337,
+   "n_ca_o": 0
+  },
+  "javascript|semgrep|cmd": {
+   "m": 8,
+   "k": 1,
+   "mu": 0.197337,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.205125,
+   "n_ca_o": 203
+  },
+  "javascript|codeql|cmd": {
+   "m": 8,
+   "k": 1,
+   "mu": 0.065668,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.066989,
+   "n_ca_o": 203
+  },
+  "javascript|njsscan|cmd": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.008996,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.009184,
+   "n_ca_o": 203
+  },
+  "javascript|eslint_security|cmd": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.202538,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.208954,
+   "n_ca_o": 203
+  },
+  "javascript|eslint_mo_rong|cmd": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.006349,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.005475,
+   "n_ca_o": 203
+  },
+  "javascript|semgrep|cors": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.012607,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.002365,
+   "n_ca_o": 26
+  },
+  "javascript|codeql|cors": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.012845,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.002842,
+   "n_ca_o": 26
+  },
+  "javascript|njsscan|cors": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.00223,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.001095,
+   "n_ca_o": 26
+  },
+  "javascript|eslint_security|cors": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.020223,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.000198,
+   "n_ca_o": 26
+  },
+  "javascript|eslint_mo_rong|cors": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.015016,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.011524,
+   "n_ca_o": 26
+  },
+  "javascript|semgrep|csrf": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.032739,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 0.03103,
+   "n_ca_o": 38
+  },
+  "javascript|codeql|csrf": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.009693,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 0.00202,
+   "n_ca_o": 38
+  },
+  "javascript|njsscan|csrf": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.002263,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 0.001495,
+   "n_ca_o": 38
+  },
+  "javascript|eslint_security|csrf": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.015445,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 0.000486,
+   "n_ca_o": 38
+  },
+  "javascript|eslint_mo_rong|csrf": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.006233,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 0.001533,
+   "n_ca_o": 38
+  },
+  "javascript|semgrep|deserialization": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.02938,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.009669,
+   "n_ca_o": 5
+  },
+  "javascript|codeql|deserialization": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.031967,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.018197,
+   "n_ca_o": 5
+  },
+  "javascript|njsscan|deserialization": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.006467,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.009039,
+   "n_ca_o": 5
+  },
+  "javascript|eslint_security|deserialization": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.051074,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.008645,
+   "n_ca_o": 5
+  },
+  "javascript|eslint_mo_rong|deserialization": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.017352,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.003862,
+   "n_ca_o": 5
+  },
+  "javascript|semgrep|eval": {
+   "m": 5,
+   "k": 0,
+   "mu": 0.109807,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.116528,
+   "n_ca_o": 105
+  },
+  "javascript|codeql|eval": {
+   "m": 5,
+   "k": 0,
+   "mu": 0.030418,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.029615,
+   "n_ca_o": 105
+  },
+  "javascript|njsscan|eval": {
+   "m": 5,
+   "k": 0,
+   "mu": 0.005094,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.005085,
+   "n_ca_o": 105
+  },
+  "javascript|eslint_security|eval": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.087488,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.088936,
+   "n_ca_o": 105
+  },
+  "javascript|eslint_mo_rong|eval": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.008593,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.007116,
+   "n_ca_o": 105
+  },
+  "javascript|semgrep|info_exposure": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.013029,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 0.011581,
+   "n_ca_o": 181
+  },
+  "javascript|codeql|info_exposure": {
+   "m": 6,
+   "k": 1,
+   "mu": 0.009441,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 0.007816,
+   "n_ca_o": 181
+  },
+  "javascript|njsscan|info_exposure": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.001806,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 0.001619,
+   "n_ca_o": 181
+  },
+  "javascript|eslint_security|info_exposure": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.016418,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 0.013331,
+   "n_ca_o": 181
+  },
+  "javascript|eslint_mo_rong|info_exposure": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.001457,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 0.000207,
+   "n_ca_o": 181
+  },
+  "javascript|semgrep|insecure_random": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.027388,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.018274,
+   "n_ca_o": 13
+  },
+  "javascript|codeql|insecure_random": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.032447,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.027521,
+   "n_ca_o": 13
+  },
+  "javascript|njsscan|insecure_random": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.012481,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.018095,
+   "n_ca_o": 13
+  },
+  "javascript|eslint_security|insecure_random": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.051718,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.035893,
+   "n_ca_o": 13
+  },
+  "javascript|eslint_mo_rong|insecure_random": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.021087,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.018772,
+   "n_ca_o": 13
+  },
+  "javascript|semgrep|jwt_secret": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.006854,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.000967,
+   "n_ca_o": 55
+  },
+  "javascript|codeql|jwt_secret": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.008197,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.002624,
+   "n_ca_o": 55
+  },
+  "javascript|njsscan|jwt_secret": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.002429,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.001929,
+   "n_ca_o": 55
+  },
+  "javascript|eslint_security|jwt_secret": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.012639,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.001794,
+   "n_ca_o": 55
+  },
+  "javascript|eslint_mo_rong|jwt_secret": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.012263,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.010111,
+   "n_ca_o": 55
+  },
+  "javascript|semgrep|khac": {
+   "m": 79,
+   "k": 1,
+   "mu": 0.004033,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.003504,
+   "n_ca_o": 666
+  },
+  "javascript|codeql|khac": {
+   "m": 79,
+   "k": 3,
+   "mu": 0.014317,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.013948,
+   "n_ca_o": 666
+  },
+  "javascript|njsscan|khac": {
+   "m": 79,
+   "k": 1,
+   "mu": 0.003351,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.003323,
+   "n_ca_o": 666
+  },
+  "javascript|eslint_security|khac": {
+   "m": 38,
+   "k": 2,
+   "mu": 0.009807,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.008869,
+   "n_ca_o": 666
+  },
+  "javascript|eslint_mo_rong|khac": {
+   "m": 38,
+   "k": 0,
+   "mu": 0.003136,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.002821,
+   "n_ca_o": 666
+  },
+  "javascript|semgrep|ma_doc": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.035904,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.0248,
+   "n_ca_o": 3
+  },
+  "javascript|codeql|ma_doc": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.030439,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.002398,
+   "n_ca_o": 3
+  },
+  "javascript|njsscan|ma_doc": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.006596,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.011311,
+   "n_ca_o": 3
+  },
+  "javascript|eslint_security|ma_doc": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.060519,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.021285,
+   "n_ca_o": 3
+  },
+  "javascript|eslint_mo_rong|ma_doc": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.021712,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.013763,
+   "n_ca_o": 3
+  },
+  "javascript|semgrep|open_redirect": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.0251,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.022273,
+   "n_ca_o": 50
+  },
+  "javascript|codeql|open_redirect": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.023545,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.020484,
+   "n_ca_o": 50
+  },
+  "javascript|njsscan|open_redirect": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.009782,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.010702,
+   "n_ca_o": 50
+  },
+  "javascript|eslint_security|open_redirect": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.013899,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.002221,
+   "n_ca_o": 50
+  },
+  "javascript|eslint_mo_rong|open_redirect": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.009745,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.006875,
+   "n_ca_o": 50
+  },
+  "javascript|semgrep|path": {
+   "m": 6,
+   "k": 2,
+   "mu": 0.220381,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.229132,
+   "n_ca_o": 207
+  },
+  "javascript|codeql|path": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.058443,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.05939,
+   "n_ca_o": 207
+  },
+  "javascript|njsscan|path": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.033935,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.035324,
+   "n_ca_o": 207
+  },
+  "javascript|eslint_security|path": {
+   "m": 2,
+   "k": 1,
+   "mu": 0.167587,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.172191,
+   "n_ca_o": 207
+  },
+  "javascript|eslint_mo_rong|path": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.008109,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.007336,
+   "n_ca_o": 207
+  },
+  "javascript|semgrep|prototype": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.166012,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.170605,
+   "n_ca_o": 276
+  },
+  "javascript|codeql|prototype": {
+   "m": 8,
+   "k": 2,
+   "mu": 0.075934,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.077277,
+   "n_ca_o": 276
+  },
+  "javascript|njsscan|prototype": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.001389,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.001252,
+   "n_ca_o": 276
+  },
+  "javascript|eslint_security|prototype": {
+   "m": 5,
+   "k": 1,
+   "mu": 0.007607,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.005263,
+   "n_ca_o": 276
+  },
+  "javascript|eslint_mo_rong|prototype": {
+   "m": 5,
+   "k": 0,
+   "mu": 0.000915,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 7.5e-05,
+   "n_ca_o": 276
+  },
+  "javascript|semgrep|regex": {
+   "m": 12,
+   "k": 1,
+   "mu": 0.080881,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.082178,
+   "n_ca_o": 321
+  },
+  "javascript|codeql|regex": {
+   "m": 12,
+   "k": 1,
+   "mu": 0.129886,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.132721,
+   "n_ca_o": 321
+  },
+  "javascript|njsscan|regex": {
+   "m": 12,
+   "k": 0,
+   "mu": 0.038799,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.039846,
+   "n_ca_o": 321
+  },
+  "javascript|eslint_security|regex": {
+   "m": 9,
+   "k": 2,
+   "mu": 0.283503,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.290083,
+   "n_ca_o": 321
+  },
+  "javascript|eslint_mo_rong|regex": {
+   "m": 9,
+   "k": 2,
+   "mu": 0.404463,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.416312,
+   "n_ca_o": 321
+  },
+  "javascript|semgrep|sqli": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.040271,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.040584,
+   "n_ca_o": 33
+  },
+  "javascript|codeql|sqli": {
+   "m": 3,
+   "k": 1,
+   "mu": 0.051346,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.055133,
+   "n_ca_o": 33
+  },
+  "javascript|njsscan|sqli": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.003284,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.002709,
+   "n_ca_o": 33
+  },
+  "javascript|eslint_security|sqli": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.023893,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.009227,
+   "n_ca_o": 33
+  },
+  "javascript|eslint_mo_rong|sqli": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.006975,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.001787,
+   "n_ca_o": 33
+  },
+  "javascript|semgrep|ssrf": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.008466,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.005643,
+   "n_ca_o": 109
+  },
+  "javascript|codeql|ssrf": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.02448,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.023162,
+   "n_ca_o": 109
+  },
+  "javascript|njsscan|ssrf": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.00207,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.001785,
+   "n_ca_o": 109
+  },
+  "javascript|eslint_security|ssrf": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.009127,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.003333,
+   "n_ca_o": 109
+  },
+  "javascript|eslint_mo_rong|ssrf": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.002753,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.000795,
+   "n_ca_o": 109
+  },
+  "javascript|semgrep|validation": {
+   "m": 4,
+   "k": 1,
+   "mu": 0.022771,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.021376,
+   "n_ca_o": 118
+  },
+  "javascript|codeql|validation": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.027352,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.026377,
+   "n_ca_o": 118
+  },
+  "javascript|njsscan|validation": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.00543,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.005451,
+   "n_ca_o": 118
+  },
+  "javascript|eslint_security|validation": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.021102,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.016765,
+   "n_ca_o": 118
+  },
+  "javascript|eslint_mo_rong|validation": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.016743,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.01612,
+   "n_ca_o": 118
+  },
+  "javascript|semgrep|weak_hash": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.02667,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.012709,
+   "n_ca_o": 9
+  },
+  "javascript|codeql|weak_hash": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.026182,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.012104,
+   "n_ca_o": 9
+  },
+  "javascript|njsscan|weak_hash": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.010956,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.017372,
+   "n_ca_o": 9
+  },
+  "javascript|eslint_security|weak_hash": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.046206,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.017225,
+   "n_ca_o": 9
+  },
+  "javascript|eslint_mo_rong|weak_hash": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.023939,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.023764,
+   "n_ca_o": 9
+  },
+  "javascript|semgrep|xac_thuc": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.007826,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 0.000846,
+   "n_ca_o": 45
+  },
+  "javascript|codeql|xac_thuc": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.011565,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 0.005502,
+   "n_ca_o": 45
+  },
+  "javascript|njsscan|xac_thuc": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.002158,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 0.001486,
+   "n_ca_o": 45
+  },
+  "javascript|eslint_security|xac_thuc": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.013629,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 0.000593,
+   "n_ca_o": 45
+  },
+  "javascript|eslint_mo_rong|xac_thuc": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.004738,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 0.000436,
+   "n_ca_o": 45
+  },
+  "javascript|semgrep|xss": {
+   "m": 11,
+   "k": 1,
+   "mu": 0.214485,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.218222,
+   "n_ca_o": 469
+  },
+  "javascript|codeql|xss": {
+   "m": 11,
+   "k": 1,
+   "mu": 0.068473,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.069105,
+   "n_ca_o": 469
+  },
+  "javascript|njsscan|xss": {
+   "m": 11,
+   "k": 0,
+   "mu": 0.005696,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.005707,
+   "n_ca_o": 469
+  },
+  "javascript|eslint_security|xss": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.005488,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.004064,
+   "n_ca_o": 469
+  },
+  "javascript|eslint_mo_rong|xss": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.083956,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.085232,
+   "n_ca_o": 469
+  },
+  "javascript|semgrep|xxe": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.035671,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 2.8e-05,
+   "n_ca_o": 1
+  },
+  "javascript|codeql|xxe": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.0354,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 0.000888,
+   "n_ca_o": 1
+  },
+  "javascript|njsscan|xxe": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.004728,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 0.000189,
+   "n_ca_o": 1
+  },
+  "javascript|eslint_security|xxe": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.065739,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 0.000237,
+   "n_ca_o": 1
+  },
+  "javascript|eslint_mo_rong|xxe": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.021907,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 8e-06,
+   "n_ca_o": 1
+  },
+  "python|semgrep|access_control": {
+   "m": 20,
+   "k": 1,
+   "mu": 0.011396,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.009271,
+   "n_ca_o": 131
+  },
+  "python|codeql|access_control": {
+   "m": 20,
+   "k": 0,
+   "mu": 0.004322,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.001686,
+   "n_ca_o": 131
+  },
+  "python|bandit|access_control": {
+   "m": 20,
+   "k": 1,
+   "mu": 0.02678,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.022717,
+   "n_ca_o": 131
+  },
+  "python|semgrep|bo_nho": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.036357,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.00757,
+   "n_ca_o": 1
+  },
+  "python|codeql|bo_nho": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.036037,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.007889,
+   "n_ca_o": 1
+  },
+  "python|bandit|bo_nho": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.085185,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.137037,
+   "n_ca_o": 1
+  },
+  "python|semgrep|cmd": {
+   "m": 4,
+   "k": 3,
+   "mu": 0.302289,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.346132,
+   "n_ca_o": 60
+  },
+  "python|codeql|cmd": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.06226,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.066162,
+   "n_ca_o": 60
+  },
+  "python|bandit|cmd": {
+   "m": 4,
+   "k": 3,
+   "mu": 0.418081,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.474427,
+   "n_ca_o": 60
+  },
+  "python|semgrep|cors": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.028115,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.000315,
+   "n_ca_o": 4
+  },
+  "python|codeql|cors": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.030155,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.008413,
+   "n_ca_o": 4
+  },
+  "python|bandit|cors": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.057245,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.000356,
+   "n_ca_o": 4
+  },
+  "python|semgrep|csrf": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.014548,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 2.6e-05,
+   "n_ca_o": 17
+  },
+  "python|codeql|csrf": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.01585,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 0.00232,
+   "n_ca_o": 17
+  },
+  "python|bandit|csrf": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.029674,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 7e-05,
+   "n_ca_o": 17
+  },
+  "python|semgrep|deserialization": {
+   "m": 5,
+   "k": 4,
+   "mu": 0.344121,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.418483,
+   "n_ca_o": 41
+  },
+  "python|codeql|deserialization": {
+   "m": 5,
+   "k": 0,
+   "mu": 0.031302,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.029461,
+   "n_ca_o": 41
+  },
+  "python|bandit|deserialization": {
+   "m": 5,
+   "k": 3,
+   "mu": 0.226174,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.261826,
+   "n_ca_o": 41
+  },
+  "python|semgrep|eval": {
+   "m": 4,
+   "k": 1,
+   "mu": 0.309643,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.357083,
+   "n_ca_o": 57
+  },
+  "python|codeql|eval": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.012668,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.008074,
+   "n_ca_o": 57
+  },
+  "python|bandit|eval": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.098407,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.101637,
+   "n_ca_o": 57
+  },
+  "python|semgrep|info_exposure": {
+   "m": 7,
+   "k": 0,
+   "mu": 0.003874,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 0.000338,
+   "n_ca_o": 100
+  },
+  "python|codeql|info_exposure": {
+   "m": 7,
+   "k": 0,
+   "mu": 0.007052,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 0.003872,
+   "n_ca_o": 100
+  },
+  "python|bandit|info_exposure": {
+   "m": 7,
+   "k": 0,
+   "mu": 0.009216,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 0.002138,
+   "n_ca_o": 100
+  },
+  "python|semgrep|insecure_random": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.0372,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.034655,
+   "n_ca_o": 8
+  },
+  "python|codeql|insecure_random": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.036582,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.033746,
+   "n_ca_o": 8
+  },
+  "python|bandit|insecure_random": {
+   "m": 2,
+   "k": 1,
+   "mu": 0.225988,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.408474,
+   "n_ca_o": 8
+  },
+  "python|semgrep|jwt_secret": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.00993,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.000477,
+   "n_ca_o": 31
+  },
+  "python|codeql|jwt_secret": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.010478,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.001325,
+   "n_ca_o": 31
+  },
+  "python|bandit|jwt_secret": {
+   "m": 8,
+   "k": 1,
+   "mu": 0.052877,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.044128,
+   "n_ca_o": 31
+  },
+  "python|semgrep|khac": {
+   "m": 90,
+   "k": 0,
+   "mu": 0.00963,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.008817,
+   "n_ca_o": 364
+  },
+  "python|codeql|khac": {
+   "m": 90,
+   "k": 2,
+   "mu": 0.014598,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.013932,
+   "n_ca_o": 364
+  },
+  "python|bandit|khac": {
+   "m": 90,
+   "k": 2,
+   "mu": 0.017824,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.016116,
+   "n_ca_o": 364
+  },
+  "python|semgrep|ma_doc": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.039235,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.017234,
+   "n_ca_o": 0
+  },
+  "python|codeql|ma_doc": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.038851,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.00595,
+   "n_ca_o": 0
+  },
+  "python|bandit|ma_doc": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.08,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.038743,
+   "n_ca_o": 0
+  },
+  "python|semgrep|open_redirect": {
+   "m": 3,
+   "k": 1,
+   "mu": 0.100982,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.122274,
+   "n_ca_o": 29
+  },
+  "python|codeql|open_redirect": {
+   "m": 3,
+   "k": 1,
+   "mu": 0.151093,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.189797,
+   "n_ca_o": 29
+  },
+  "python|bandit|open_redirect": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.024595,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.00549,
+   "n_ca_o": 29
+  },
+  "python|semgrep|path": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.05934,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.061167,
+   "n_ca_o": 110
+  },
+  "python|codeql|path": {
+   "m": 8,
+   "k": 3,
+   "mu": 0.135179,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.143936,
+   "n_ca_o": 110
+  },
+  "python|bandit|path": {
+   "m": 8,
+   "k": 1,
+   "mu": 0.071036,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.070221,
+   "n_ca_o": 110
+  },
+  "python|semgrep|prototype": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.040099,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.044416,
+   "n_ca_o": 2
+  },
+  "python|codeql|prototype": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.03436,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.011901,
+   "n_ca_o": 2
+  },
+  "python|bandit|prototype": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.067351,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.004105,
+   "n_ca_o": 2
+  },
+  "python|semgrep|regex": {
+   "m": 12,
+   "k": 1,
+   "mu": 0.019938,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.0181,
+   "n_ca_o": 105
+  },
+  "python|codeql|regex": {
+   "m": 12,
+   "k": 1,
+   "mu": 0.072918,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.076162,
+   "n_ca_o": 105
+  },
+  "python|bandit|regex": {
+   "m": 12,
+   "k": 0,
+   "mu": 0.017893,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.011978,
+   "n_ca_o": 105
+  },
+  "python|semgrep|sqli": {
+   "m": 5,
+   "k": 1,
+   "mu": 0.186412,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.245282,
+   "n_ca_o": 25
+  },
+  "python|codeql|sqli": {
+   "m": 5,
+   "k": 0,
+   "mu": 0.035989,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.034845,
+   "n_ca_o": 25
+  },
+  "python|bandit|sqli": {
+   "m": 5,
+   "k": 2,
+   "mu": 0.234055,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.295677,
+   "n_ca_o": 25
+  },
+  "python|semgrep|ssrf": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.00984,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.002671,
+   "n_ca_o": 41
+  },
+  "python|codeql|ssrf": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.085898,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.097372,
+   "n_ca_o": 41
+  },
+  "python|bandit|ssrf": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.016816,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.001405,
+   "n_ca_o": 41
+  },
+  "python|semgrep|validation": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.044862,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.045785,
+   "n_ca_o": 61
+  },
+  "python|codeql|validation": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.028086,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.026322,
+   "n_ca_o": 61
+  },
+  "python|bandit|validation": {
+   "m": 6,
+   "k": 1,
+   "mu": 0.061656,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.058649,
+   "n_ca_o": 61
+  },
+  "python|semgrep|weak_hash": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.131476,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.362079,
+   "n_ca_o": 4
+  },
+  "python|codeql|weak_hash": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.038705,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.038338,
+   "n_ca_o": 4
+  },
+  "python|bandit|weak_hash": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.186527,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.452846,
+   "n_ca_o": 4
+  },
+  "python|semgrep|xac_thuc": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.009232,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 0.000659,
+   "n_ca_o": 35
+  },
+  "python|codeql|xac_thuc": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.010875,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 0.002882,
+   "n_ca_o": 35
+  },
+  "python|bandit|xac_thuc": {
+   "m": 4,
+   "k": 1,
+   "mu": 0.02442,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 0.008541,
+   "n_ca_o": 35
+  },
+  "python|semgrep|xss": {
+   "m": 7,
+   "k": 0,
+   "mu": 0.071697,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.074358,
+   "n_ca_o": 122
+  },
+  "python|codeql|xss": {
+   "m": 7,
+   "k": 1,
+   "mu": 0.027457,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.026524,
+   "n_ca_o": 122
+  },
+  "python|bandit|xss": {
+   "m": 7,
+   "k": 0,
+   "mu": 0.041565,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.038415,
+   "n_ca_o": 122
+  },
+  "python|semgrep|xxe": {
+   "m": 2,
+   "k": 1,
+   "mu": 0.195267,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 0.299289,
+   "n_ca_o": 15
+  },
+  "python|codeql|xxe": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.057216,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 0.069459,
+   "n_ca_o": 15
+  },
+  "python|bandit|xxe": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.043044,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 0.018406,
+   "n_ca_o": 15
+  },
+  "java|semgrep|access_control": {
+   "m": 28,
+   "k": 0,
+   "mu": 0.002626,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 3e-05,
+   "n_ca_o": 141
+  },
+  "java|codeql|access_control": {
+   "m": 28,
+   "k": 0,
+   "mu": 0.003086,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.00055,
+   "n_ca_o": 141
+  },
+  "java|semgrep|bo_nho": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.023081,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 3e-06,
+   "n_ca_o": 7
+  },
+  "java|codeql|bo_nho": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.023116,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.000637,
+   "n_ca_o": 7
+  },
+  "java|semgrep|cmd": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.016124,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.006075,
+   "n_ca_o": 23
+  },
+  "java|codeql|cmd": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.020494,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.012512,
+   "n_ca_o": 23
+  },
+  "java|semgrep|cors": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.030221,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.000175,
+   "n_ca_o": 3
+  },
+  "java|codeql|cors": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.029928,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.000182,
+   "n_ca_o": 3
+  },
+  "java|semgrep|csrf": {
+   "m": 10,
+   "k": 0,
+   "mu": 0.004729,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 6.6e-05,
+   "n_ca_o": 74
+  },
+  "java|codeql|csrf": {
+   "m": 10,
+   "k": 0,
+   "mu": 0.004785,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 0.000181,
+   "n_ca_o": 74
+  },
+  "java|semgrep|deserialization": {
+   "m": 4,
+   "k": 1,
+   "mu": 0.16137,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.19438,
+   "n_ca_o": 37
+  },
+  "java|codeql|deserialization": {
+   "m": 4,
+   "k": 1,
+   "mu": 0.035694,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.03484,
+   "n_ca_o": 37
+  },
+  "java|semgrep|eval": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.015963,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.003714,
+   "n_ca_o": 19
+  },
+  "java|codeql|eval": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.014583,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.00181,
+   "n_ca_o": 19
+  },
+  "java|semgrep|info_exposure": {
+   "m": 14,
+   "k": 0,
+   "mu": 0.003407,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 0.00015,
+   "n_ca_o": 110
+  },
+  "java|codeql|info_exposure": {
+   "m": 14,
+   "k": 0,
+   "mu": 0.027507,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 0.026476,
+   "n_ca_o": 110
+  },
+  "java|semgrep|insecure_random": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.027939,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.009113,
+   "n_ca_o": 6
+  },
+  "java|codeql|insecure_random": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.036368,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.032228,
+   "n_ca_o": 6
+  },
+  "java|semgrep|jwt_secret": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.018078,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.000448,
+   "n_ca_o": 12
+  },
+  "java|codeql|jwt_secret": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.019715,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.003768,
+   "n_ca_o": 12
+  },
+  "java|semgrep|khac": {
+   "m": 71,
+   "k": 1,
+   "mu": 0.015765,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.014795,
+   "n_ca_o": 242
+  },
+  "java|codeql|khac": {
+   "m": 71,
+   "k": 2,
+   "mu": 0.032193,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.031918,
+   "n_ca_o": 242
+  },
+  "java|semgrep|ma_doc": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.039235,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.005382,
+   "n_ca_o": 0
+  },
+  "java|codeql|ma_doc": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.038851,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.002277,
+   "n_ca_o": 0
+  },
+  "java|semgrep|open_redirect": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.048349,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.05536,
+   "n_ca_o": 13
+  },
+  "java|codeql|open_redirect": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.019718,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.005001,
+   "n_ca_o": 13
+  },
+  "java|semgrep|path": {
+   "m": 7,
+   "k": 0,
+   "mu": 0.007049,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.002813,
+   "n_ca_o": 76
+  },
+  "java|codeql|path": {
+   "m": 7,
+   "k": 2,
+   "mu": 0.176002,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.194049,
+   "n_ca_o": 76
+  },
+  "java|semgrep|prototype": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.036297,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.006917,
+   "n_ca_o": 1
+  },
+  "java|codeql|prototype": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.035557,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.002613,
+   "n_ca_o": 1
+  },
+  "java|semgrep|regex": {
+   "m": 7,
+   "k": 0,
+   "mu": 0.022816,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.019168,
+   "n_ca_o": 45
+  },
+  "java|codeql|regex": {
+   "m": 7,
+   "k": 0,
+   "mu": 0.033509,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.032322,
+   "n_ca_o": 45
+  },
+  "java|semgrep|sqli": {
+   "m": 6,
+   "k": 1,
+   "mu": 0.045088,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.048168,
+   "n_ca_o": 19
+  },
+  "java|codeql|sqli": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.017307,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.005968,
+   "n_ca_o": 19
+  },
+  "java|semgrep|ssrf": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.015753,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.001939,
+   "n_ca_o": 17
+  },
+  "java|codeql|ssrf": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.016818,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.003857,
+   "n_ca_o": 17
+  },
+  "java|semgrep|validation": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.020566,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.017291,
+   "n_ca_o": 57
+  },
+  "java|codeql|validation": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.007428,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.001915,
+   "n_ca_o": 57
+  },
+  "java|semgrep|weak_hash": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.029568,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.010232,
+   "n_ca_o": 5
+  },
+  "java|codeql|weak_hash": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.030955,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.015164,
+   "n_ca_o": 5
+  },
+  "java|semgrep|xac_thuc": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.014311,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 0.000464,
+   "n_ca_o": 18
+  },
+  "java|codeql|xac_thuc": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.014155,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 0.000435,
+   "n_ca_o": 18
+  },
+  "java|semgrep|xss": {
+   "m": 11,
+   "k": 0,
+   "mu": 0.003939,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.000478,
+   "n_ca_o": 102
+  },
+  "java|codeql|xss": {
+   "m": 11,
+   "k": 0,
+   "mu": 0.004321,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.000936,
+   "n_ca_o": 102
+  },
+  "java|semgrep|xxe": {
+   "m": 7,
+   "k": 2,
+   "mu": 0.29525,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 0.324016,
+   "n_ca_o": 89
+  },
+  "java|codeql|xxe": {
+   "m": 7,
+   "k": 0,
+   "mu": 0.005901,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 0.002198,
+   "n_ca_o": 89
+  },
+  "go|semgrep|access_control": {
+   "m": 23,
+   "k": 0,
+   "mu": 0.002075,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.00013,
+   "n_ca_o": 191
+  },
+  "go|semgrep|bo_nho": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.030387,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.000892,
+   "n_ca_o": 3
+  },
+  "go|semgrep|cmd": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.008651,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.00241,
+   "n_ca_o": 49
+  },
+  "go|semgrep|cors": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.020873,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.00047,
+   "n_ca_o": 9
+  },
+  "go|semgrep|csrf": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.015092,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 2e-06,
+   "n_ca_o": 16
+  },
+  "go|semgrep|deserialization": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.030232,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.000222,
+   "n_ca_o": 3
+  },
+  "go|semgrep|eval": {
+   "m": 1,
+   "k": 1,
+   "mu": 0.073417,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.111396,
+   "n_ca_o": 9
+  },
+  "go|semgrep|info_exposure": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.00384,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 3.4e-05,
+   "n_ca_o": 93
+  },
+  "go|semgrep|insecure_random": {
+   "m": 2,
+   "k": 1,
+   "mu": 0.250376,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.484977,
+   "n_ca_o": 9
+  },
+  "go|semgrep|jwt_secret": {
+   "m": 8,
+   "k": 0,
+   "mu": 0.008299,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.000565,
+   "n_ca_o": 40
+  },
+  "go|semgrep|khac": {
+   "m": 97,
+   "k": 0,
+   "mu": 0.00114,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.000151,
+   "n_ca_o": 385
+  },
+  "go|semgrep|ma_doc": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.039235,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.004415,
+   "n_ca_o": 0
+  },
+  "go|semgrep|open_redirect": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.111496,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.149528,
+   "n_ca_o": 19
+  },
+  "go|semgrep|path": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.005094,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.000286,
+   "n_ca_o": 71
+  },
+  "go|semgrep|prototype": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.039235,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.096823,
+   "n_ca_o": 0
+  },
+  "go|semgrep|regex": {
+   "m": 14,
+   "k": 0,
+   "mu": 0.00353,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.000254,
+   "n_ca_o": 109
+  },
+  "go|semgrep|sqli": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.067329,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.078566,
+   "n_ca_o": 25
+  },
+  "go|semgrep|ssrf": {
+   "m": 4,
+   "k": 1,
+   "mu": 0.033895,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.031987,
+   "n_ca_o": 28
+  },
+  "go|semgrep|validation": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.005972,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.000136,
+   "n_ca_o": 57
+  },
+  "go|semgrep|weak_hash": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.077566,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.141449,
+   "n_ca_o": 6
+  },
+  "go|semgrep|xac_thuc": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.007311,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 5.6e-05,
+   "n_ca_o": 44
+  },
+  "go|semgrep|xss": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.108781,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.123577,
+   "n_ca_o": 47
+  },
+  "go|semgrep|xxe": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.039235,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 0.268568,
+   "n_ca_o": 0
+  },
+  "php|semgrep|access_control": {
+   "m": 30,
+   "k": 0,
+   "mu": 0.003684,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "xac_thuc",
+     0.799
+    ],
+    [
+     "khac",
+     0.674
+    ],
+    [
+     "info_exposure",
+     0.593
+    ]
+   ],
+   "mu_hcl_raw": 0.000298,
+   "n_ca_o": 105
+  },
+  "php|semgrep|bo_nho": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.039235,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "regex",
+     0.824
+    ],
+    [
+     "khac",
+     0.764
+    ],
+    [
+     "deserialization",
+     0.726
+    ]
+   ],
+   "mu_hcl_raw": 0.000575,
+   "n_ca_o": 0
+  },
+  "php|semgrep|cmd": {
+   "m": 9,
+   "k": 2,
+   "mu": 0.095064,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "eval",
+     0.805
+    ],
+    [
+     "sqli",
+     0.737
+    ],
+    [
+     "validation",
+     0.72
+    ]
+   ],
+   "mu_hcl_raw": 0.104858,
+   "n_ca_o": 57
+  },
+  "php|semgrep|cors": {
+   "m": 1,
+   "k": 0,
+   "mu": 0.033039,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.928
+    ],
+    [
+     "insecure_random",
+     0.911
+    ],
+    [
+     "csrf",
+     0.856
+    ]
+   ],
+   "mu_hcl_raw": 0.002055,
+   "n_ca_o": 2
+  },
+  "php|semgrep|csrf": {
+   "m": 7,
+   "k": 0,
+   "mu": 0.006836,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cors",
+     0.856
+    ],
+    [
+     "insecure_random",
+     0.794
+    ],
+    [
+     "weak_hash",
+     0.781
+    ]
+   ],
+   "mu_hcl_raw": 0.000224,
+   "n_ca_o": 49
+  },
+  "php|semgrep|deserialization": {
+   "m": 6,
+   "k": 2,
+   "mu": 0.215301,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.726
+    ],
+    [
+     "khac",
+     0.616
+    ],
+    [
+     "regex",
+     0.609
+    ]
+   ],
+   "mu_hcl_raw": 0.272097,
+   "n_ca_o": 31
+  },
+  "php|semgrep|eval": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.032313,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.805
+    ],
+    [
+     "sqli",
+     0.623
+    ],
+    [
+     "validation",
+     0.6
+    ]
+   ],
+   "mu_hcl_raw": 0.030335,
+   "n_ca_o": 35
+  },
+  "php|semgrep|info_exposure": {
+   "m": 10,
+   "k": 0,
+   "mu": 0.005117,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "khac",
+     0.751
+    ],
+    [
+     "bo_nho",
+     0.625
+    ],
+    [
+     "ssrf",
+     0.617
+    ]
+   ],
+   "mu_hcl_raw": 2.5e-05,
+   "n_ca_o": 67
+  },
+  "php|semgrep|insecure_random": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.019016,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.96
+    ],
+    [
+     "cors",
+     0.911
+    ],
+    [
+     "csrf",
+     0.794
+    ]
+   ],
+   "mu_hcl_raw": 0.000635,
+   "n_ca_o": 11
+  },
+  "php|semgrep|jwt_secret": {
+   "m": 3,
+   "k": 0,
+   "mu": 0.019956,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "weak_hash",
+     0.861
+    ],
+    [
+     "cors",
+     0.826
+    ],
+    [
+     "insecure_random",
+     0.773
+    ]
+   ],
+   "mu_hcl_raw": 0.000677,
+   "n_ca_o": 10
+  },
+  "php|semgrep|khac": {
+   "m": 62,
+   "k": 0,
+   "mu": 0.001766,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.764
+    ],
+    [
+     "info_exposure",
+     0.751
+    ],
+    [
+     "regex",
+     0.713
+    ]
+   ],
+   "mu_hcl_raw": 0.000198,
+   "n_ca_o": 239
+  },
+  "php|semgrep|ma_doc": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.039235,
+   "nguon": "hcl_b33b_muon_ngon_ngu",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "validation",
+     0.704
+    ],
+    [
+     "jwt_secret",
+     0.583
+    ],
+    [
+     "khac",
+     0.5
+    ]
+   ],
+   "mu_hcl_raw": 0.00664,
+   "n_ca_o": 0
+  },
+  "php|semgrep|open_redirect": {
+   "m": 2,
+   "k": 0,
+   "mu": 0.015374,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "ssrf",
+     0.713
+    ],
+    [
+     "khac",
+     0.691
+    ],
+    [
+     "regex",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.00046,
+   "n_ca_o": 16
+  },
+  "php|semgrep|path": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.051476,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.699
+    ],
+    [
+     "khac",
+     0.612
+    ],
+    [
+     "open_redirect",
+     0.585
+    ]
+   ],
+   "mu_hcl_raw": 0.053701,
+   "n_ca_o": 55
+  },
+  "php|semgrep|prototype": {
+   "m": 0,
+   "k": 0,
+   "mu": 0.035669,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.667
+    ],
+    [
+     "regex",
+     0.644
+    ],
+    [
+     "khac",
+     0.625
+    ]
+   ],
+   "mu_hcl_raw": 0.0,
+   "n_ca_o": 1
+  },
+  "php|semgrep|regex": {
+   "m": 10,
+   "k": 0,
+   "mu": 0.012355,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.824
+    ],
+    [
+     "khac",
+     0.713
+    ],
+    [
+     "open_redirect",
+     0.688
+    ]
+   ],
+   "mu_hcl_raw": 0.003394,
+   "n_ca_o": 30
+  },
+  "php|semgrep|sqli": {
+   "m": 12,
+   "k": 2,
+   "mu": 0.033694,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.737
+    ],
+    [
+     "validation",
+     0.708
+    ],
+    [
+     "xss",
+     0.653
+    ]
+   ],
+   "mu_hcl_raw": 0.032902,
+   "n_ca_o": 70
+  },
+  "php|semgrep|ssrf": {
+   "m": 8,
+   "k": 3,
+   "mu": 0.101831,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "open_redirect",
+     0.713
+    ],
+    [
+     "khac",
+     0.712
+    ],
+    [
+     "bo_nho",
+     0.675
+    ]
+   ],
+   "mu_hcl_raw": 0.130283,
+   "n_ca_o": 22
+  },
+  "php|semgrep|validation": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.022764,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.72
+    ],
+    [
+     "sqli",
+     0.708
+    ],
+    [
+     "ma_doc",
+     0.704
+    ]
+   ],
+   "mu_hcl_raw": 0.019535,
+   "n_ca_o": 51
+  },
+  "php|semgrep|weak_hash": {
+   "m": 1,
+   "k": 1,
+   "mu": 0.15285,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "insecure_random",
+     0.96
+    ],
+    [
+     "cors",
+     0.928
+    ],
+    [
+     "jwt_secret",
+     0.861
+    ]
+   ],
+   "mu_hcl_raw": 0.531565,
+   "n_ca_o": 3
+  },
+  "php|semgrep|xac_thuc": {
+   "m": 6,
+   "k": 0,
+   "mu": 0.010645,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "access_control",
+     0.799
+    ],
+    [
+     "jwt_secret",
+     0.651
+    ],
+    [
+     "khac",
+     0.577
+    ]
+   ],
+   "mu_hcl_raw": 5.6e-05,
+   "n_ca_o": 27
+  },
+  "php|semgrep|xss": {
+   "m": 13,
+   "k": 1,
+   "mu": 0.033521,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": false,
+   "ho_lang_gieng": [
+    [
+     "cmd",
+     0.663
+    ],
+    [
+     "sqli",
+     0.653
+    ],
+    [
+     "validation",
+     0.555
+    ]
+   ],
+   "mu_hcl_raw": 0.03336,
+   "n_ca_o": 355
+  },
+  "php|semgrep|xxe": {
+   "m": 4,
+   "k": 0,
+   "mu": 0.016826,
+   "nguon": "hcl_b33b_cung_o",
+   "it_mau": true,
+   "ho_lang_gieng": [
+    [
+     "bo_nho",
+     0.693
+    ],
+    [
+     "open_redirect",
+     0.651
+    ],
+    [
+     "khac",
+     0.647
+    ]
+   ],
+   "mu_hcl_raw": 0.000819,
+   "n_ca_o": 14
+  }
+ },
+ "danh_gia": {
+  "so_cap": 2145,
+  "so_duong": 87,
+  "kappa_chon": {
+   "A0=10": 4,
+   "A1=30": 3,
+   "A1=10": 2,
+   "A0=30": 1
+  },
+  "A0": {
+   "brier": 0.037307823576711675,
+   "logloss": 0.15813845553665962,
+   "auc": 0.7130625649274488
+  },
+  "A1": {
+   "brier": 0.03712929700772886,
+   "logloss": 0.1546996988487164,
+   "auc": 0.7303402477575595
+  },
+  "A2": {
+   "brier": 0.03791904268314061,
+   "logloss": 0.15842778682252107,
+   "auc": 0.7457469030305061
+  },
+  "hieu_A1_tru_A0": {
+   "brier": [
+    -0.0001785265689828175,
+    -0.0005038637866587613,
+    0.0001615471212859336
+   ],
+   "logloss": [
+    -0.0034387566879432174,
+    -0.008421112586373616,
+    0.0008989285837364066
+   ]
+  },
+  "bang_dung": "A0"
+ },
+ "ngoai_tam_sast": {
+  "dinh_nghia": "P(K3 | ngon ngu, ho loi): ty le ban va cham >=4 tep hoac thiet ke (nhan K3), co ve ty le K3 cua ngon ngu, kappa=10.",
+  "bang": {
+   "javascript": {
+    "csrf": {
+     "p": 0.0816,
+     "n": 38
+    },
+    "regex": {
+     "p": 0.036,
+     "n": 321
+    },
+    "khac": {
+     "p": 0.062,
+     "n": 666
+    },
+    "xss": {
+     "p": 0.1063,
+     "n": 469
+    },
+    "validation": {
+     "p": 0.054,
+     "n": 118
+    },
+    "access_control": {
+     "p": 0.1514,
+     "n": 280
+    },
+    "info_exposure": {
+     "p": 0.1357,
+     "n": 181
+    },
+    "xac_thuc": {
+     "p": 0.1258,
+     "n": 45
+    },
+    "path": {
+     "p": 0.101,
+     "n": 207
+    },
+    "sqli": {
+     "p": 0.1841,
+     "n": 33
+    },
+    "insecure_random": {
+     "p": 0.0399,
+     "n": 13
+    },
+    "prototype": {
+     "p": 0.0661,
+     "n": 276
+    },
+    "cmd": {
+     "p": 0.1029,
+     "n": 203
+    },
+    "ssrf": {
+     "p": 0.1338,
+     "n": 109
+    },
+    "open_redirect": {
+     "p": 0.032,
+     "n": 50
+    },
+    "jwt_secret": {
+     "p": 0.0603,
+     "n": 55
+    },
+    "eval": {
+     "p": 0.1297,
+     "n": 105
+    },
+    "xxe": {
+     "p": 0.0835,
+     "n": 1
+    },
+    "cors": {
+     "p": 0.2755,
+     "n": 26
+    },
+    "weak_hash": {
+     "p": 0.101,
+     "n": 9
+    },
+    "ma_doc": {
+     "p": 0.0706,
+     "n": 3
+    },
+    "deserialization": {
+     "p": 0.0612,
+     "n": 5
+    }
+   },
+   "python": {
+    "validation": {
+     "p": 0.0561,
+     "n": 61
+    },
+    "khac": {
+     "p": 0.1069,
+     "n": 364
+    },
+    "open_redirect": {
+     "p": 0.0765,
+     "n": 29
+    },
+    "xac_thuc": {
+     "p": 0.0885,
+     "n": 35
+    },
+    "path": {
+     "p": 0.0582,
+     "n": 110
+    },
+    "jwt_secret": {
+     "p": 0.0484,
+     "n": 31
+    },
+    "access_control": {
+     "p": 0.0992,
+     "n": 131
+    },
+    "xxe": {
+     "p": 0.1193,
+     "n": 15
+    },
+    "cmd": {
+     "p": 0.0855,
+     "n": 60
+    },
+    "regex": {
+     "p": 0.1042,
+     "n": 105
+    },
+    "eval": {
+     "p": 0.2386,
+     "n": 57
+    },
+    "deserialization": {
+     "p": 0.1173,
+     "n": 41
+    },
+    "info_exposure": {
+     "p": 0.0544,
+     "n": 100
+    },
+    "xss": {
+     "p": 0.0681,
+     "n": 122
+    },
+    "sqli": {
+     "p": 0.1995,
+     "n": 25
+    },
+    "weak_hash": {
+     "p": 0.0702,
+     "n": 4
+    },
+    "ssrf": {
+     "p": 0.1369,
+     "n": 41
+    },
+    "csrf": {
+     "p": 0.1846,
+     "n": 17
+    },
+    "insecure_random": {
+     "p": 0.0546,
+     "n": 8
+    },
+    "prototype": {
+     "p": 0.0819,
+     "n": 2
+    },
+    "cors": {
+     "p": 0.0702,
+     "n": 4
+    },
+    "bo_nho": {
+     "p": 0.0894,
+     "n": 1
+    }
+   },
+   "java": {
+    "bo_nho": {
+     "p": 0.13,
+     "n": 7
+    },
+    "regex": {
+     "p": 0.1674,
+     "n": 45
+    },
+    "info_exposure": {
+     "p": 0.1434,
+     "n": 110
+    },
+    "khac": {
+     "p": 0.1238,
+     "n": 242
+    },
+    "access_control": {
+     "p": 0.167,
+     "n": 141
+    },
+    "xxe": {
+     "p": 0.0425,
+     "n": 89
+    },
+    "xss": {
+     "p": 0.109,
+     "n": 102
+    },
+    "ssrf": {
+     "p": 0.1559,
+     "n": 17
+    },
+    "path": {
+     "p": 0.0489,
+     "n": 76
+    },
+    "eval": {
+     "p": 0.1107,
+     "n": 19
+    },
+    "jwt_secret": {
+     "p": 0.2368,
+     "n": 12
+    },
+    "cmd": {
+     "p": 0.1882,
+     "n": 23
+    },
+    "sqli": {
+     "p": 0.1796,
+     "n": 19
+    },
+    "cors": {
+     "p": 0.0931,
+     "n": 3
+    },
+    "xac_thuc": {
+     "p": 0.1861,
+     "n": 18
+    },
+    "deserialization": {
+     "p": 0.0683,
+     "n": 37
+    },
+    "csrf": {
+     "p": 0.0739,
+     "n": 74
+    },
+    "open_redirect": {
+     "p": 0.0526,
+     "n": 13
+    },
+    "validation": {
+     "p": 0.1375,
+     "n": 57
+    },
+    "insecure_random": {
+     "p": 0.1381,
+     "n": 6
+    },
+    "prototype": {
+     "p": 0.11,
+     "n": 1
+    },
+    "weak_hash": {
+     "p": 0.1473,
+     "n": 5
+    }
+   },
+   "go": {
+    "khac": {
+     "p": 0.1401,
+     "n": 385
+    },
+    "xac_thuc": {
+     "p": 0.1361,
+     "n": 44
+    },
+    "xss": {
+     "p": 0.1816,
+     "n": 47
+    },
+    "access_control": {
+     "p": 0.1361,
+     "n": 191
+    },
+    "info_exposure": {
+     "p": 0.1199,
+     "n": 93
+    },
+    "regex": {
+     "p": 0.1542,
+     "n": 109
+    },
+    "jwt_secret": {
+     "p": 0.207,
+     "n": 40
+    },
+    "cmd": {
+     "p": 0.0738,
+     "n": 49
+    },
+    "path": {
+     "p": 0.1401,
+     "n": 71
+    },
+    "validation": {
+     "p": 0.1396,
+     "n": 57
+    },
+    "weak_hash": {
+     "p": 0.147,
+     "n": 6
+    },
+    "open_redirect": {
+     "p": 0.0466,
+     "n": 19
+    },
+    "eval": {
+     "p": 0.2291,
+     "n": 9
+    },
+    "deserialization": {
+     "p": 0.104,
+     "n": 3
+    },
+    "insecure_random": {
+     "p": 0.0712,
+     "n": 9
+    },
+    "ssrf": {
+     "p": 0.0882,
+     "n": 28
+    },
+    "sqli": {
+     "p": 0.0672,
+     "n": 25
+    },
+    "cors": {
+     "p": 0.2291,
+     "n": 9
+    },
+    "csrf": {
+     "p": 0.0905,
+     "n": 16
+    },
+    "bo_nho": {
+     "p": 0.104,
+     "n": 3
+    }
+   },
+   "php": {
+    "access_control": {
+     "p": 0.1839,
+     "n": 105
+    },
+    "xss": {
+     "p": 0.0853,
+     "n": 355
+    },
+    "insecure_random": {
+     "p": 0.1025,
+     "n": 11
+    },
+    "csrf": {
+     "p": 0.189,
+     "n": 49
+    },
+    "info_exposure": {
+     "p": 0.1448,
+     "n": 67
+    },
+    "cmd": {
+     "p": 0.1067,
+     "n": 57
+    },
+    "path": {
+     "p": 0.0331,
+     "n": 55
+    },
+    "khac": {
+     "p": 0.101,
+     "n": 239
+    },
+    "regex": {
+     "p": 0.1788,
+     "n": 30
+    },
+    "cors": {
+     "p": 0.096,
+     "n": 2
+    },
+    "deserialization": {
+     "p": 0.0769,
+     "n": 31
+    },
+    "sqli": {
+     "p": 0.1644,
+     "n": 70
+    },
+    "xxe": {
+     "p": 0.0897,
+     "n": 14
+    },
+    "jwt_secret": {
+     "p": 0.0576,
+     "n": 10
+    },
+    "ssrf": {
+     "p": 0.2235,
+     "n": 22
+    },
+    "eval": {
+     "p": 0.1367,
+     "n": 35
+    },
+    "xac_thuc": {
+     "p": 0.1663,
+     "n": 27
+    },
+    "validation": {
+     "p": 0.0845,
+     "n": 51
+    },
+    "open_redirect": {
+     "p": 0.0828,
+     "n": 16
+    },
+    "weak_hash": {
+     "p": 0.0886,
+     "n": 3
+    },
+    "prototype": {
+     "p": 0.1047,
+     "n": 1
+    }
+   }
+  }
+ },
+ "danh_gia_h4_b33b": {
+  "so_cap": 2145,
+  "so_duong": 87,
+  "kappa_A0_theo_fold": [
+   10,
+   10,
+   10,
+   10,
+   30
+  ],
+  "A0": {
+   "brier": 0.037307823576711675,
+   "logloss": 0.15813845553665962,
+   "auc": 0.713084905554997
+  },
+  "A1_b33b": {
+   "brier": 0.034765613231516834,
+   "logloss": 0.1449028666914139,
+   "auc": 0.787956726204439
+  },
+  "A2_b33b_calibrated": {
+   "brier": 0.039375169165313015,
+   "logloss": 0.19544402264792457,
+   "auc": 0.7642114316991164
+  },
+  "A1_b33b_k1": {
+   "brier": 0.038361825847518995,
+   "logloss": 0.17536337614408667,
+   "auc": 0.7428174882432448
+  },
+  "A1_b33b_k3": {
+   "brier": 0.036187313170459375,
+   "logloss": 0.15795349630279606,
+   "auc": 0.763918210962546
+  },
+  "A1_b33b_k10": {
+   "brier": 0.034751902316348886,
+   "logloss": 0.14574999320729407,
+   "auc": 0.7887163075410789
+  },
+  "A1_b33b_k30": {
+   "brier": 0.034309501102006014,
+   "logloss": 0.14003528905669826,
+   "auc": 0.7997023111379199
+  },
+  "hieu_so_voi_A0": {
+   "A1_b33b|brier": [
+    -0.002542210345194841,
+    -0.004544689095900175,
+    -0.0005767844454852351
+   ],
+   "A1_b33b|logloss": [
+    -0.013235588845245727,
+    -0.023632893305717894,
+    -0.0033119446269709017
+   ],
+   "A1_b33b|auc": [
+    0.07487182064944198,
+    0.032581592240409865,
+    0.1187104444631335
+   ],
+   "A2_b33b_calibrated|brier": [
+    0.0020673455886013395,
+    -0.002722137066207156,
+    0.00678996487896113
+   ],
+   "A2_b33b_calibrated|logloss": [
+    0.03730556711126495,
+    0.01148786165818509,
+    0.06464656319335976
+   ],
+   "A2_b33b_calibrated|auc": [
+    0.05112652614411939,
+    -0.027887003106847975,
+    0.13243212708050348
+   ]
+  }
+ }
+}

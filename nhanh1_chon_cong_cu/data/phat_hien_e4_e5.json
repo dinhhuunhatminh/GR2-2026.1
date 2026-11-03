@@ -1,0 +1,400 @@
+{
+ "bi_mat": {
+  "gitleaks": [
+   "deploy/.env.production:3",
+   "deploy/.env.production:4",
+   "app/settings.py:3",
+   "app/settings.py:4",
+   "app/settings.py:5",
+   "src/config.js:3",
+   "app/settings.py:6",
+   "deploy/.env.production:5",
+   "deploy/.env.production:6",
+   "src/config.js:4",
+   "app/settings.py:7",
+   "deploy/.env.production:7",
+   "src/config.js:5",
+   "src/config.js:8",
+   "src/config.js:9",
+   "deploy/.env.production:11",
+   "deploy/.env.production:12",
+   "deploy/.env.production:13",
+   "app/settings.py:15",
+   "deploy/.env.production:14",
+   "src/config.js:10",
+   "src/config.js:11",
+   "app/settings.py:16",
+   "deploy/.env.production:15",
+   "src/config.js:12",
+   "app/settings.py:17",
+   "deploy/.env.production:16",
+   "app/settings.py:20",
+   "app/settings.py:21",
+   "src/config.js:16",
+   "src/config.js:17",
+   "src/config.js:18",
+   "deploy/.env.production:23",
+   "src/config.js:19",
+   "app/settings.py:22",
+   "app/settings.py:23",
+   "deploy/.env.production:24",
+   "src/config.js:20",
+   "app/settings.py:24",
+   "deploy/.env.production:25",
+   "keys/deploy_0.pem:ca_tep",
+   "keys/deploy_1.pem:ca_tep",
+   "keys/deploy_2.pem:ca_tep"
+  ],
+  "trivy": [
+   "deploy/.env.production:3",
+   "deploy/.env.production:4",
+   "app/settings.py:3",
+   "app/settings.py:4",
+   "app/settings.py:5",
+   "src/config.js:3",
+   "app/settings.py:6",
+   "deploy/.env.production:5",
+   "src/config.js:4",
+   "app/settings.py:7",
+   "deploy/.env.production:7",
+   "src/config.js:5",
+   "deploy/.env.production:11",
+   "deploy/.env.production:12",
+   "deploy/.env.production:13",
+   "app/settings.py:15",
+   "deploy/.env.production:14",
+   "src/config.js:10",
+   "app/settings.py:16",
+   "deploy/.env.production:15",
+   "src/config.js:12",
+   "app/settings.py:17",
+   "app/settings.py:20",
+   "app/settings.py:21",
+   "src/config.js:16",
+   "src/config.js:17",
+   "src/config.js:18",
+   "deploy/.env.production:23",
+   "src/config.js:19",
+   "app/settings.py:22",
+   "src/config.js:20",
+   "app/settings.py:24",
+   "deploy/.env.production:25",
+   "keys/deploy_0.pem:ca_tep",
+   "keys/deploy_1.pem:ca_tep",
+   "keys/deploy_2.pem:ca_tep"
+  ]
+ },
+ "tong_bi_mat": [
+  "deploy/.env.production:3",
+  "deploy/.env.production:4",
+  "app/settings.py:3",
+  "app/settings.py:4",
+  "app/settings.py:5",
+  "src/config.js:3",
+  "app/settings.py:6",
+  "deploy/.env.production:5",
+  "deploy/.env.production:6",
+  "src/config.js:4",
+  "app/settings.py:7",
+  "deploy/.env.production:7",
+  "src/config.js:5",
+  "src/config.js:6",
+  "app/settings.py:8",
+  "src/config.js:8",
+  "src/config.js:9",
+  "deploy/.env.production:11",
+  "deploy/.env.production:12",
+  "deploy/.env.production:13",
+  "app/settings.py:15",
+  "deploy/.env.production:14",
+  "src/config.js:10",
+  "src/config.js:11",
+  "app/settings.py:16",
+  "deploy/.env.production:15",
+  "src/config.js:12",
+  "app/settings.py:17",
+  "app/settings.py:18",
+  "deploy/.env.production:16",
+  "app/settings.py:20",
+  "app/settings.py:21",
+  "src/config.js:16",
+  "src/config.js:17",
+  "src/config.js:18",
+  "deploy/.env.production:23",
+  "src/config.js:19",
+  "app/settings.py:22",
+  "app/settings.py:23",
+  "deploy/.env.production:24",
+  "src/config.js:20",
+  "app/settings.py:24",
+  "deploy/.env.production:25",
+  "deploy/.env.production:26",
+  "src/config.js:21",
+  "keys/deploy_0.pem:ca_tep",
+  "keys/deploy_1.pem:ca_tep",
+  "keys/deploy_2.pem:ca_tep"
+ ],
+ "cau_hinh": {
+  "trivy": {
+   "dockerfile": [
+    "df_root",
+    "df_latest",
+    "df_secret_env"
+   ],
+   "terraform": [
+    "tf_s3_public",
+    "tf_sg_open",
+    "tf_ebs_noenc",
+    "tf_rds_public",
+    "tf_kms_norot"
+   ],
+   "cloudformation": [
+    "cfn_s3_public",
+    "cfn_sg_open",
+    "cfn_rds_public"
+   ],
+   "k8s": [
+    "k8s_privileged",
+    "k8s_hostnetwork",
+    "k8s_root",
+    "k8s_priv_esc",
+    "k8s_hostpath"
+   ]
+  },
+  "checkov": {
+   "dockerfile": [
+    "df_root",
+    "df_latest",
+    "df_add_url"
+   ],
+   "terraform": [
+    "tf_s3_public",
+    "tf_sg_open",
+    "tf_ebs_noenc",
+    "tf_rds_public",
+    "tf_iam_star",
+    "tf_kms_norot"
+   ],
+   "cloudformation": [
+    "cfn_s3_public",
+    "cfn_sg_open",
+    "cfn_rds_public"
+   ],
+   "k8s": [
+    "k8s_privileged",
+    "k8s_hostnetwork",
+    "k8s_root",
+    "k8s_priv_esc"
+   ],
+   "gh_actions": [
+    "gha_script_inj",
+    "gha_write_all"
+   ]
+  },
+  "hadolint": {
+   "dockerfile": [
+    "df_secret_env"
+   ]
+  },
+  "kics": {
+   "dockerfile": [
+    "df_root",
+    "df_latest",
+    "df_add_url",
+    "df_secret_env"
+   ],
+   "terraform": [
+    "tf_s3_public",
+    "tf_sg_open",
+    "tf_ebs_noenc",
+    "tf_rds_public",
+    "tf_iam_star",
+    "tf_kms_norot"
+   ],
+   "cloudformation": [
+    "cfn_s3_public",
+    "cfn_sg_open",
+    "cfn_rds_public"
+   ],
+   "k8s": [
+    "k8s_privileged",
+    "k8s_hostnetwork",
+    "k8s_root",
+    "k8s_priv_esc",
+    "k8s_hostpath"
+   ],
+   "docker_compose": [
+    "dc_privileged",
+    "dc_docker_sock",
+    "dc_no_new_privs",
+    "dc_cap_add",
+    "dc_host_network",
+    "dc_host_mount",
+    "dc_all_interfaces",
+    "dc_no_healthcheck",
+    "dc_host_pid"
+   ]
+  },
+  "docker_bench": {
+   "docker_compose": [
+    "dc_privileged",
+    "dc_docker_sock",
+    "dc_no_new_privs",
+    "dc_cap_add",
+    "dc_host_network",
+    "dc_no_mem_limit",
+    "dc_rw_rootfs",
+    "dc_all_interfaces",
+    "dc_no_healthcheck",
+    "dc_host_pid"
+   ]
+  }
+ },
+ "cap_theo_loai": {
+  "dockerfile": [
+   "df_root",
+   "df_latest",
+   "df_add_url",
+   "df_secret_env",
+   "df_curl_bash"
+  ],
+  "terraform": [
+   "tf_s3_public",
+   "tf_sg_open",
+   "tf_ebs_noenc",
+   "tf_rds_public",
+   "tf_iam_star",
+   "tf_kms_norot"
+  ],
+  "cloudformation": [
+   "cfn_s3_public",
+   "cfn_sg_open",
+   "cfn_rds_public"
+  ],
+  "k8s": [
+   "k8s_privileged",
+   "k8s_hostnetwork",
+   "k8s_root",
+   "k8s_priv_esc",
+   "k8s_hostpath"
+  ],
+  "gh_actions": [
+   "gha_prt_checkout",
+   "gha_script_inj",
+   "gha_write_all",
+   "gha_unpinned"
+  ],
+  "docker_compose": [
+   "dc_privileged",
+   "dc_docker_sock",
+   "dc_root_user",
+   "dc_no_new_privs",
+   "dc_cap_add",
+   "dc_host_network",
+   "dc_no_mem_limit",
+   "dc_rw_rootfs",
+   "dc_host_mount",
+   "dc_all_interfaces",
+   "dc_no_healthcheck",
+   "dc_host_pid",
+   "dc_restart_always"
+  ]
+ },
+ "ghi_chu_cau_hinh": "Bí mật E4 (48 ca) + Cấu hình E5_v2 chấm chặt (23 cặp: buoc4_kiem_chung/e5_nhan/ket_qua_e5_v2.json + buoc21 KICS 18/23) + Docker Compose/Runtime (13 biến thể tang2_deploy: KICS 9/13, Docker Bench 10/13, hợp 11/13) + Container Image (14 mục từ tang2_release Release_A + Release_B: Dockle bắt độc quyền rb_env_file, rb_ssh_key trong tầng image; Grype bắt đủ CVE gói ứng dụng + 91 gói OS Debian) + DAST (10 lớp lỗ hổng gr2-vulnapp từ tang2_dast + buoc21: ZAP 9/10, Nuclei 5/10, hợp 10/10).",
+ "container_image": {
+  "trivy": [
+   "rb_root",
+   "rb_latest",
+   "rb_secret_env",
+   "rb_add_local",
+   "rb_port22",
+   "rb_no_healthcheck",
+   "rb_apt_hygiene",
+   "ra_app_cve"
+  ],
+  "checkov": [
+   "rb_root",
+   "rb_latest",
+   "rb_secret_env",
+   "rb_add_local",
+   "rb_add_url",
+   "rb_port22",
+   "rb_no_healthcheck"
+  ],
+  "kics": [
+   "rb_root",
+   "rb_latest",
+   "rb_secret_env",
+   "rb_add_local",
+   "rb_add_url",
+   "rb_port22",
+   "rb_no_healthcheck",
+   "rb_apt_hygiene"
+  ],
+  "hadolint": [
+   "rb_latest",
+   "rb_add_local",
+   "rb_apt_hygiene"
+  ],
+  "dockle": [
+   "rb_root",
+   "rb_secret_env",
+   "rb_no_healthcheck",
+   "rb_apt_hygiene",
+   "rb_env_file",
+   "rb_ssh_key"
+  ],
+  "grype": [
+   "ra_app_cve",
+   "ra_os_debian_cve"
+  ]
+ },
+ "tong_container_image": [
+  "rb_root",
+  "rb_latest",
+  "rb_secret_env",
+  "rb_curl_sh",
+  "rb_chmod777",
+  "rb_add_local",
+  "rb_add_url",
+  "rb_port22",
+  "rb_no_healthcheck",
+  "rb_apt_hygiene",
+  "rb_env_file",
+  "rb_ssh_key",
+  "ra_app_cve",
+  "ra_os_debian_cve"
+ ],
+ "kiem_thu_dong": {
+  "zap": [
+   "dast_xss",
+   "dast_sqli",
+   "dast_path",
+   "dast_redirect",
+   "dast_cmd",
+   "dast_headers",
+   "dast_cookie",
+   "dast_cors",
+   "dast_infoleak"
+  ],
+  "nuclei": [
+   "dast_xss",
+   "dast_path",
+   "dast_redirect",
+   "dast_cmd",
+   "dast_exposed_file"
+  ]
+ },
+ "tong_kiem_thu_dong": [
+  "dast_xss",
+  "dast_sqli",
+  "dast_path",
+  "dast_redirect",
+  "dast_cmd",
+  "dast_headers",
+  "dast_cookie",
+  "dast_cors",
+  "dast_infoleak",
+  "dast_exposed_file"
+ ]
+}

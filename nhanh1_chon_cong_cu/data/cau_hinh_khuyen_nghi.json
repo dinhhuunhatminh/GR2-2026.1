@@ -1,0 +1,52 @@
+{
+ "_ghi_chu": "Cấu hình khuyến nghị bước 13 (đã đo: không làm mất lỗi nào trên 187 lỗi đáp án; giảm mạnh cảnh báo sai). Lệnh minh họa – chỉnh đường dẫn theo dự án.",
+ "chung_quet_ma": "Bỏ thư mục test/, tests/, docs/, examples/, fixtures/, benchmarks/, vendor/, node_modules/ và tệp *.min.js – không phải mã chạy thật.",
+ "semgrep": {
+  "lenh": "semgrep scan --config <semgrep-rules>/<ngôn ngữ> --exclude test --exclude tests --exclude docs --exclude examples --exclude vendor --json -o semgrep.json .   (đã đo với semgrep-rules commit 9bbf021; bộ registry p/<ngôn ngữ> gần tương đương nhưng chưa đo)",
+  "loc": "Chỉ giữ kết quả có extra.metadata.category = \"security\" (ví dụ: jq '[.results[] | select(.extra.metadata.category==\"security\")]' semgrep.json)",
+  "ly_do": "Luật correctness/best-practice chiếm phần lớn cảnh báo nhưng không phải lỗi bảo mật."
+ },
+ "bandit": {
+  "lenh": "bandit -r . -s B101 -x ./tests,./test,./docs,./examples -f json -o bandit.json",
+  "ly_do": "97% cảnh báo bandit trên repo thật là B101 (assert) trong mã test."
+ },
+ "eslint_security": {
+  "lenh": "eslint-plugin-security, cấu hình recommended nhưng tắt rule 'security/detect-object-injection': 'off'; bỏ thư mục test và tệp *.min.js",
+  "ly_do": "detect-object-injection chiếm ~98% cảnh báo và chính README của plugin cảnh báo nhiều báo nhầm."
+ },
+ "eslint_mo_rong": {
+  "lenh": "Chỉ bật no-unsanitized/method, no-unsanitized/property và các luật regexp chống ReDoS (regexp/no-super-linear-backtracking, regexp/no-super-linear-move, regexp/no-dupe-disjunctions)",
+  "ly_do": "Các luật phong cách của eslint-plugin-regexp không liên quan bảo mật."
+ },
+ "njsscan": {
+  "lenh": "njsscan --json -o njsscan.json . (thêm ignore-paths: test, tests, docs, examples, node_modules trong tệp .njsscan)",
+  "ly_do": "Bỏ mã test."
+ },
+ "codeql": {
+  "lenh": "codeql database create db --language=<ngôn ngữ> && codeql database analyze db <ngôn ngữ>-security-extended.qls --format=sarif-latest -o codeql.sarif (paths-ignore: test, docs, examples trong tệp cấu hình CodeQL)",
+  "ly_do": "Bộ truy vấn security-extended; Java/Go cần build để kết quả tốt."
+ },
+ "kics": {
+  "lenh": "docker run --rm -v <repo>:/path checkmarx/kics:latest scan -p /path --no-progress --report-formats json -o /path --output-name kics-result",
+  "loc": "Chỉ giữ các truy vấn có severity HIGH hoặc MEDIUM thuộc nhóm bảo mật (bỏ các truy vấn best-practice không liên quan bảo mật như thiếu giới hạn CPU/RAM nếu không cần).",
+  "ly_do": "Giảm cảnh báo thực hành chung, giữ nguyên 18/23 lỗi cấu hình E5 và 9/13 lỗi docker-compose."
+ },
+ "grype": {
+  "lenh": "grype dir:. -o json > grype-sca.json (pha Build) | grype <image:tag> -o json > grype-image.json (pha Release)",
+  "ly_do": "Quét nhanh cả lockfile (2.3s) lẫn các gói hệ điều hành và ứng dụng bên trong container image (11.3s)."
+ },
+ "dockle": {
+  "lenh": "docker run --rm -v /var/run/docker.sock:/var/run/docker.sock goodwithtech/dockle:v0.4.15 -f json -i CIS-DI-0010 <image:tag>",
+  "ly_do": "Phát hiện khóa riêng (SSH key), tệp .env và bí mật bị đóng gói nhầm vào các tầng (layers) của image sau khi build."
+ },
+ "docker_bench": {
+  "lenh": "docker run --rm --net host --pid host --userns host --cap-add audit_control -v /var/run/docker.sock:/var/run/docker.sock:ro -v /etc:/etc:ro docker/docker-bench-security -c container_images,container_runtime",
+  "loc": "Chỉ lọc các mục [WARN] ở phần 4 (Container Images) và phần 5 (Container Runtime).",
+  "ly_do": "Kiểm toán trực tiếp trạng thái container đang chạy (bắt thiếu giới hạn bộ nhớ, rootfs ghi được, quyền đặc quyền, chia sẻ namespace)."
+ },
+ "nuclei": {
+  "lenh": "nuclei -l urls.txt -dast -jsonl -o nuclei-dast.jsonl && nuclei -u <base_url> -tags exposure,dotenv,files -jsonl -o nuclei-exposures.jsonl",
+  "loc": "Bỏ các kết quả mức info (-es info).",
+  "ly_do": "Kết hợp fuzzing động (-dast) trên các endpoint có tham số và quét lộ tệp cấu hình (/.env) với 0 báo nhầm trong ~63s."
+ }
+}
